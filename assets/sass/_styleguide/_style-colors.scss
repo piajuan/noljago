@@ -11,14 +11,16 @@
     --color-base-blue:                          #2FBBF0;
     --color-base-lime:                          #CED749;
 
+    --color-base-darkgray:                      #505050;
+    --color-base-lightgray:                     #ACACAC;
+
     // Primary Colors
     --color-primary:                            var(--color-base-pink);
     --color-secondary:                          var(--color-base-violet);
     --color-tertiary:                           var(--color-base-green);
 
     // Neutral Shades
-    --color-dark-gray:                          #505050;
-    --color-light-gray:                         #ACACAC;
+
 
     --color-success:                            #{$oc-green-5};
     --color-success-hover:                      #{$oc-green-7};

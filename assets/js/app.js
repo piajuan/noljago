@@ -158,10 +158,14 @@ var plugins = (function () {
 
     // Hero Swiper
     const heroSwiper = function() {
-        var swiper = new Swiper(".nj-hero-carousel .swiper", {
+        var swiper = new Swiper(".nj-sec__hero .swiper", {
             pagination: {
-              el: ".nj-hero-carousel .swiper-pagination",
+              el: ".nj-sec__hero .swiper-pagination",
             },
+            effect: 'fade',
+            autoplay: {
+                delay: 2000,
+            }
         });
     };
 

@@ -28,9 +28,13 @@ function current_file_url()
     <meta name="description" content="">
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>My Starter Template</title>
+    <title>Noljago</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- plugin -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
     <!-- sass file compilation -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--    <link rel="stylesheet" href="assets/css/docs.css">-->
@@ -40,7 +44,7 @@ function current_file_url()
 </head>
 
 <body>
-    <header class="nj-header header--fixed">
+    <header class="nj-header header--fixed nj-header--green">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

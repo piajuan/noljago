@@ -7,11 +7,11 @@ Buttons
 // 1.Config
 :root {
     // -----------------  BUTTON OPTIONS  --------------------
-    --btn-font-size: 1em; // Global button font size
+    --btn-font-size: 1.2em; // Global button font size
 
-    --btn-radius: 4px; // Global button shapes (make it square if you want)
+    --btn-radius: 8px; // Global button shapes (make it square if you want)
 
-    --btn-fonts: var(--fonts-tertiary); // Adjust this base on your need see style-typography.scss
+    --btn-fonts: var(--font-primary); // Adjust this base on your need see style-typography.scss
 
     --btn-light-label: var(--color-base-white); //Adjust your color
 
@@ -75,7 +75,7 @@ Buttons
 
     //    margin: 0 var(--space-md) 0 0;
     margin: 0;
-    padding: var(--space-sm) var(--space-sm);
+    padding: var(--space-sm) var(--space-rg);
     border-radius: var(--btn-radius);
     font-size: var(--btn-font-size);
     color: var(--color-link);
@@ -83,9 +83,8 @@ Buttons
 
     transition: 0.2s;
 
-    @include mq($from: desktop-medium) {
-    padding: var(--space-rg) var(--space-rg);
-
+    @include mq($from: desktop-small) {
+        padding: var(--space-rg) var(--space-lg);
     }
 
     &:active {
@@ -196,6 +195,33 @@ fieldset:disabled a.btn {
         background-color: var(--btn-secondary-bg);
     }
 }
+
+.btn--pink {
+    // main button
+    background-color: var(--color--base-pink);
+    color: var(--btn-light-label);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color--base-pink);
+        color: var(--btn-light-label);
+    }
+
+    &:active {
+        background-color:var(--color--base-pink);
+        color: var(--btn-light-label);
+    }
+
+    &:visited {
+        color: var(--btn-light-label);
+
+        &:hover {
+            color: var(--btn-light-label);
+        }
+    }
+}
+
+
 
 .btn--basic {
     // subtle version, used for secondary actions or in combo with primary/accent button
@@ -493,21 +519,21 @@ fieldset:disabled a.btn {
 }
 
 .btn--pink {
-    background-color: $oc-pink-7;
+    background-color: var(--color-base-pink);
     color: var(--btn-light-label);
 
     &:hover,
     &:focus {
-        background-color: $oc-pink-5;
+        background-color: var(--color-base-pink);
         color: var(--btn-light-label);
     }
 
     &:visited {
-        background-color: $oc-pink-7;
+        background-color: var(--color-base-pink);
         color: var(--btn-light-label);
 
         &:hover {
-            background-color: $oc-pink-7;
+            background-color: var(--color-base-pink)
         }
     }
 }
@@ -533,21 +559,21 @@ fieldset:disabled a.btn {
 }
 
 .btn--violet {
-    background-color: $oc-violet-7;
+    background-color:var(--color-base-violet);
     color: var(--btn-light-label);
 
     &:hover,
     &:focus {
-        background-color: $oc-violet-5;
+        background-color: var(--color-base-violet);
         color: var(--btn-light-label);
     }
 
     &:visited {
-        background-color: $oc-violet-7;
+        background-color: var(--color-base-violet);
         color: var(--btn-light-label);
 
         &:hover {
-            background-color: $oc-violet-7;
+            background-color: var(--color-base-violet);
         }
     }
 }
@@ -633,41 +659,41 @@ fieldset:disabled a.btn {
 }
 
 .btn--green {
-    background-color: $oc-green-7;
+    background-color: var(--color-base-green);
     color: var(--btn-light-label);
 
     &:hover,
     &:focus {
-        background-color: $oc-green-5;
+        background-color: var(--color-base-green);
         color: var(--btn-light-label);
     }
 
     &:visited {
-        background-color: $oc-green-7;
+        background-color: var(--color-base-green);
         color: var(--btn-light-label);
 
         &:hover {
-            background-color: $oc-green-7;
+            background-color:var(--color-base-green);
         }
     }
 }
 
 .btn--lime {
-    background-color: $oc-lime-7;
+    background-color: var(--color-base-lime);
     color: var(--btn-light-label);
 
     &:hover,
     &:focus {
-        background-color: $oc-lime-5;
+        background-color: var(--color-base-lime);
         color: var(--btn-light-label);
     }
 
     &:visited {
-        background-color: $oc-lime-7;
+        background-color: var(--color-base-lime);
         color: var(--btn-light-label);
 
         &:hover {
-            background-color: $oc-lime-7;
+            background-color: var(--color-base-lime);
         }
     }
 }

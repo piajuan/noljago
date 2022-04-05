@@ -6,10 +6,10 @@ Header
 
 -------------------*/
 // 1.Config
-:root {
-    --nav-link-color: var(--color-dark-gray);
-    --nav-link-color-hover: var(--color-primary);
-}
+// :root {
+//     --nav-link-color: var(--color-dark-gray);
+//     --nav-link-color-hover: var(--color-primary);
+// }
 
 // 2.Layouts
 .nj-header {
@@ -122,7 +122,7 @@ Header
     display: block;
     padding: var(--space-xxs) 0;
     margin: 0 var(--space-sm);
-    color: var(--nav-link-color) !important;
+    color: var(--color-base-darkgray) !important;
     transition: all 0.2s ease-in-out;
     @include x-rem(font-size, 18px);
     font-family: var(--font-primary);
@@ -130,16 +130,43 @@ Header
     text-decoration: none;
 
     &:hover {
-      color: var(--nav-link-color-hover) !important;
       cursor: pointer;
     }
   }
 
   .nj-header__nav_icon {
     @extend .nj-header__nav_link;
-    color: var(--color-light-gray) !important;
+    color: var(--color-base-lightgray) !important;
     @include x-rem(font-size, 20px);
     padding: 0 0.15rem;
     margin: 0;
   }
  
+
+  // MODS
+  .nj-header--pink {
+    .nj-header__nav_link {
+      &:hover,
+      &.active {
+        color: var(--color-base-pink) !important;
+      }
+    }
+  }
+
+  .nj-header--violet {
+    .nj-header__nav_link {
+      &:hover,
+      &.active {
+        color: var(--color-base-violet) !important;
+      }
+    }
+  }
+
+  .nj-header--green {
+    .nj-header__nav_link {
+      &:hover,
+      &.active {
+        color: var(--color-base-green) !important;
+      }
+    }
+  }

@@ -57,11 +57,6 @@ Sidebar
     color: #fff;
     font-weight: 600;
     display: none;
-
-    @include mq($from: desktop-small) {
-        display: inline-block;
-        line-height: 70px;
-    }
 }
 
 #nj-menu-trigger .nj-menu-icon {
@@ -76,7 +71,7 @@ Sidebar
 
     width: 18px;
     height: 2px;
-    background-color: var(--color-light-gray);
+    background-color: var(--color-base-lightgray);
 
     /* these are the upper and lower lines in the menu menu */
     @include mq($from: tablet-portrait) {
