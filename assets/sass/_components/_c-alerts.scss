@@ -1,0 +1,71 @@
+// main: ../style.scss
+
+/*-------------------
+
+Alerts & Notifications
+
+-------------------*/
+
+// 1. sass vars / css vars
+// 2. Base
+.alert {
+    font-size: 0.9375rem;
+}
+
+.alert {
+    position: relative;
+    @include x-rem(padding, 18px 18px);
+    @include x-rem(margin-bottom, 16px);
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem 1.25rem;
+    color: inherit;
+}
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.alert-warning {
+    color: #7d6608;
+    background-color: #fcf3cf;
+    border-color: #fbeebc;
+}
+
+
+.close {
+    float: right;
+    font-size: 1.40625rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+
+.close {
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: .3s color;
+}
+
+.close:before {
+    content: '\ea00';
+    font-family: "feather";
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    opacity: .75;
+}

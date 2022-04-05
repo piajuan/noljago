@@ -1,0 +1,44 @@
+// main: ../style.scss
+
+//**
+// Other Useful Reusable Styles
+//**
+
+.list-unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.valign {
+  vertical-align: middle;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+//  margin: $padding 0;
+}
+
+
+.no-p {
+    padding: 0;
+}
+
+.no-m {
+    margin: 0;
+}
+
+
+//  Vertical Align the Content
+.v-align {
+    @extend %flex-vertical-center;
+    -webkit-justify-content: left;
+    justify-content: left;
+    .v-align__content {
+        -webkit-box-flex: 0;
+        -webkit-flex: none;
+        flex: none;
+        width: 100%;
+    }
+}

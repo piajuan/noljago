@@ -1,0 +1,101 @@
+// main: ../style.scss
+
+:root {
+    --form-bg-color: #000;
+    --form-font-color-light: var(--color-base-white);
+    --form-font-color-dark: #000;
+    --form-label-color: var(--color-secondary);
+}
+
+form {
+    width: 100%;
+    height: auto;
+}
+
+
+.frm__label {
+    color: var(--form-font-color-light);
+    @include x-rem(font-size, 16px);
+    font-family: var(--font-primary);
+
+    .frm__label--required {
+        color: $oc-red-5;
+    }
+}
+
+.frm__input {
+    background-color: var(--form-bg-color);
+    @include x-rem(font-size, 16px);
+    border-radius: 0px;
+    color: var(--form-font-color-light);
+    border: 0px;
+
+    &:focus,
+    &:hover {
+        box-shadow: 0;
+        outline: 0;
+        background-color: var(--form-bg-color);
+        color: var(--color-base-white);
+    }
+
+    &::-webkit-input-placeholder {
+        /* Edge */
+        color: var(--color-base-white);
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--color-base-white);
+    }
+
+    &::placeholder {
+        color: var(--color-base-white);
+    }
+
+}
+
+.frm__input--outline {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--form-bg-color);
+    background-color: transparent;
+    color: var(--form-font-color-dark);
+
+    &:focus,
+    &:hover {
+        border-color: var(--color-primary);
+        box-shadow: 0;
+        outline: 0;
+        background-color: transparent;
+        color: var(--form-font-color-dark);
+    }
+
+    &::-webkit-input-placeholder {
+        /* Edge */
+        color: var(--form-font-color-dark);
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--form-font-color-dark);
+    }
+
+    &::placeholder {
+        color: var(--form-font-color-dark);
+    }
+}
+
+.form-control--disabled,
+.form-control[disabled],
+.form-control[readonly] {
+    cursor: not-allowed;
+}
+
+.form-control[aria-invalid="true"],
+.form-control--error {
+    border-color: var(--color-error);
+
+    &:focus {
+        // box-shadow: 0px 0px 0px 2px alpha(var(--color-error), 0.2);
+    }
+}

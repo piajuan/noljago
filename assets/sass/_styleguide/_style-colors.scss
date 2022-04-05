@@ -1,0 +1,33 @@
+// main: ../style.scss
+
+:root {
+    // COLORS
+    --color-base-white:                         #fff;
+    --color-base-black:                         #000;
+    --color-base-pink:                          #E83E72;
+    --color-base-violet:                        #562E74;
+    --color-base-green:                         #119978;
+    --color-base-orange:                        #F7941D;
+    --color-base-blue:                          #2FBBF0;
+    --color-base-lime:                          #CED749;
+
+    // Primary Colors
+    --color-primary:                            var(--color-base-pink);
+    --color-secondary:                          var(--color-base-violet);
+    --color-tertiary:                           var(--color-base-green);
+
+    // Neutral Shades
+    --color-dark-gray:                          #505050;
+    --color-light-gray:                         #ACACAC;
+
+    --color-success:                            #{$oc-green-5};
+    --color-success-hover:                      #{$oc-green-7};
+    --color-success-active:                     #{$oc-green-9};
+    --color-danger:                             #{$oc-red-5};
+    --color-danger-hover:                       #{$oc-red-7};
+    --color-danger-active:                      #{$oc-red-8};
+    --color-warning:                            #{$oc-yellow-5};
+    --color-warning-hover:                      #{$oc-yellow-7};
+    --color-warning-active:                     #{$oc-yellow-9};
+
+}

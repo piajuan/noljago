@@ -1,0 +1,11 @@
+// main: ../style.scss
+
+.block {
+    @at-root #{&}__element {
+        padding: 0;
+    }
+
+    @at-root #{&}--modifier {
+        color: #000;
+    }
+}

@@ -1,0 +1,427 @@
+// main: ../style.scss
+
+/*-------------------
+
+Sidebar
+
+-------------------*/
+
+// 1.Config
+// Sidebar
+:root {
+    --sidebar-bg: linear-gradient(to bottom, var(--color-primary), var(--color-secondary)); // alternative to black bg
+    --sidebar-bg-color: var(--color-base-white);
+    --sidebar-text-color: var(--color-dark-gray);
+    --sidebar-text-active-color: var(--color-primary);
+    --sidebar-link-active-color: transparent;
+}
+
+// 2.Layouts
+
+/* mobile-portrait menu trigger that will comes out when the mobile-portrait view is the main viewport */
+
+#nj-menu-trigger {
+    //    position: absolute;
+    //    right: 0;
+    //    top: 0;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-bottom: none;
+    text-align: center;
+    padding: var(--space-rg);
+    display: block;
+
+
+    // @include mq($from: mobile-portrait) {
+    // }
+
+    @include mq($from: tablet-portrait) {
+        width: auto;
+        width: 50px;
+        padding: var(--space-xs);
+        height: 50px;
+    }
+
+    @include mq($from: desktop-small) {
+        // display: none;
+        padding: var(--space-xs);
+        height: 20px;
+    }
+}
+
+#nj-menu-trigger .nj-menu-text {
+    height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    display: none;
+
+    @include mq($from: desktop-small) {
+        display: inline-block;
+        line-height: 70px;
+    }
+}
+
+#nj-menu-trigger .nj-menu-icon {
+    /* this span is the central line in the menu menu */
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 18px;
+    height: 2px;
+    background-color: var(--color-light-gray);
+
+    /* these are the upper and lower lines in the menu menu */
+    @include mq($from: tablet-portrait) {
+        // left: 16px;
+        // right: 16px;
+        transform: translateX(0);
+    }
+
+    @include mq($from: desktop-small) {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+#nj-menu-trigger .nj-menu-icon::before,
+#nj-menu-trigger .nj-menu-icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: inherit;
+    left: 0;
+}
+
+#nj-menu-trigger .nj-menu-icon::before {
+    bottom: 5px;
+}
+
+#nj-menu-trigger .nj-menu-icon::after {
+    top: 5px;
+}
+
+#nj-menu-trigger.is-clicked .nj-menu-icon {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#nj-menu-trigger.is-clicked .nj-menu-icon::before,
+#nj-menu-trigger.is-clicked .nj-menu-icon::after {
+    background-color: var(--color-primary);
+}
+
+#nj-menu-trigger.is-clicked .nj-menu-icon::before {
+    bottom: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nj-menu-trigger.is-clicked .nj-menu-icon::after {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* Sidebar menu for (mobile-portrait devices) */
+
+#nj-lateral-nav {
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    /* the secondary navigation is covered by the main element */
+    z-index: 0;
+    width: 260px;
+    background-color: var(--sidebar-bg-color);
+    overflow-y: auto;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.2s 0s, visibility 0s 0.2s;
+    -moz-transition: -moz-transform 0.2s 0s, visibility 0s 0.2s;
+    transition: transform 0.2s 0s, visibility 0s 0.2s;
+    /* this creates the subtle slide in animation of the navigation */
+    -webkit-transform: translateX(80px);
+    -moz-transform: translateX(80px);
+    -ms-transform: translateX(80px);
+    -o-transform: translateX(80px);
+    transform: translateX(80px);
+    
+    // background-image: var(--sidebar-bg);
+
+    @include mq($from: mobile-portrait) {
+        display: block;
+    }
+
+    @include mq($from: desktop-small) {
+        // display: none;
+    }
+}
+
+#nj-lateral-nav .nj-navigation {
+    margin: 10px 0 16px;
+
+    @include mq($from: tablet-portrait) {
+        margin: 20px 0;
+    }
+
+    .page--active {
+        color: var(--sidebar-text-active-color);
+        background-color: var(--sidebar-link-active-color);
+        position: relative;
+    }
+}
+
+/* Dropdown Menu for sidebar */
+
+#nj-lateral-nav .sub-menu {
+    //background-color: #235527;
+    display: none;
+    //    background-color: darken($sb-bg-c, 3);
+}
+
+// #nj-lateral-nav .sub-menu-inner {
+//     background-color: rgb(22, 22, 22);
+// }
+
+#nj-lateral-nav .sub-menu-inner a {
+    padding-left: 28px;
+}
+
+#nj-lateral-nav .item-has-children,
+#nj-lateral-nav .item-has-children-submenu {
+    position: relative;
+}
+
+#nj-lateral-nav .item-has-children .submenu-open {
+    background-color: var(--color-primary);
+    //color: var(--sidebar-link-active-color);
+    color: var(--color-secondary);
+}
+
+#nj-lateral-nav .item-has-children-submenu .submenu-open {
+    color: var(--sidebar-link-active-color);
+}
+
+/* START : 08072020 */
+#nj-lateral-nav .nj-navigation__link {
+    display: block;
+    @include x-rem(font-size, 14px);
+    border-bottom: none;
+    padding: var(--space-sm) var(--space-rg);
+    color: var(--sidebar-text-color);
+    //    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+
+    &:hover {
+        color: var(--color-primary);
+    }
+
+    &:active {
+        color: var(--sidebar-text-active-color);
+    }
+
+    .icon {
+        color: var(--color-base-white);
+    }
+
+    .icon svg #Path_2,
+    .icon svg #Ellipse_4 {
+        stroke: var(--color-base-white);
+    }
+}
+
+/* Current Page Indicator (Active State) */
+
+#nj-lateral-nav li.current {
+    background-color: var(--sidebar-text-active-color);
+    color: #fff;
+}
+
+.no-touch #nj-lateral-nav a:hover {
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    #nj-lateral-nav .nj-navigation {
+    }
+}
+
+#nj-lateral-nav.lateral-menu-is-open {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+    -webkit-transition: -webkit-transform 0.2s 0s, visibility 0s 0s;
+    -moz-transition: -moz-transform 0.2s 0s, visibility 0s 0s;
+    transition: transform 0.2s 0s, visibility 0s 0s;
+    /* smooth the scrolling on touch devices - webkit browsers */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* style menu items which have a submenu  */
+
+#nj-lateral-nav .item-has-children-submenu > a {
+    position: relative;
+    // text-transform: uppercase;
+    font-family: var(--font-secondary);
+    // font-weight: bold;
+    font-size: em(14);
+    z-index: 0;
+    display: inline-block;
+    width: 100%;
+
+    .icon {
+        margin-right: var(--space-rg);
+    }
+}
+
+#nj-lateral-nav .item-has-children > a {
+    position: relative;
+    // text-transform: uppercase;
+    font-family: var(--font-secondary);
+    // font-weight: bold;
+    font-size: em(14);
+    z-index: 0;
+
+    .icon {
+        margin-right: var(--space-rg);
+    }
+}
+
+#nj-lateral-nav .item-has-children-submenu > .item__arrow {
+    display: inline-flex;
+    height: 42px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0deg);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    z-index: 1;
+    color: var(--color-base-white);
+}
+
+#nj-lateral-nav .item-has-children > a .item__arrow {
+    display: inline-flex;
+    height: 100%;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0deg);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    z-index: 1;
+}
+
+#nj-lateral-nav .item-has-children-submenu > .item__arrow.submenu-open-inner {
+    background-color: #161616;
+}
+#nj-lateral-nav .item-has-children-submenu > .item__arrow.submenu-open-inner i {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#nj-lateral-nav .item-has-children > a.submenu-open .item__arrow i {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#nj-lateral-nav .socials {
+    padding: 0 32px;
+}
+
+#nj-lateral-nav .socials:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#nj-lateral-nav .socials a {
+    height: 32px;
+    width: 32px;
+    float: left;
+    padding: 0;
+    background-image: url("../img/cd-socials.svg");
+    background-repeat: no-repeat;
+    background-size: 128px 64px;
+    background-color: #fff;
+    margin-right: 0.5em;
+    border-radius: 0.25em;
+}
+
+#nj-lateral-nav .socials a.nj-twitter {
+    background-position: 0 0;
+}
+
+#nj-lateral-nav .socials a.nj-github {
+    background-position: -32px 0;
+}
+
+#nj-lateral-nav .socials a.nj-facebook {
+    background-position: -64px 0;
+}
+
+#nj-lateral-nav .socials a.nj-google {
+    background-position: -96px 0;
+}
+
+.no-touch #nj-lateral-nav .socials a:hover {
+    background-color: #4e6361;
+}
+
+.no-touch #nj-lateral-nav .socials a:hover.nj-twitter {
+    background-position: 0 -32px;
+}
+
+.no-touch #nj-lateral-nav .socials a:hover.nj-github {
+    background-position: -32px -32px;
+}
+
+.no-touch #nj-lateral-nav .socials a:hover.nj-facebook {
+    background-position: -64px -32px;
+}
+
+.no-touch #nj-lateral-nav .socials a:hover.nj-google {
+    background-position: -96px -32px;
+}
+
+.nj-navigation--bottom {
+    //position: absolute;
+    width: 100%;
+    height: auto;
+    padding: var(--space-rg);
+    bottom: 0;
+    left: 0;
+}

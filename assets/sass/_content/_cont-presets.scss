@@ -1,0 +1,96 @@
+// main: ../style.scss
+
+/*-------------------
+
+Presets
+
+-------------------*/
+// 1.Config
+
+// 2.Base
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    background-color: var(--body-color-bg);
+    font-size: inherit;
+    width: 100%;
+}
+
+html,
+body {
+    /* you need to set this to assign to the main element a min height of 100% */
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: auto;
+
+    // min-height: 100%;
+}
+
+.nj-main-content {
+    /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    /* Force Hardware Acceleration in WebKit */
+    //    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: var(--color-base-white);
+
+
+    padding-top: 107px;
+}
+
+.nj-main-content.lateral-menu-is-open {
+    /* translate to show the lateral menu - all content needs to be put in the .nj-main-content to translate*/
+    -webkit-transform: translateX(-260px);
+    -moz-transform: translateX(-260px);
+    -ms-transform: translateX(-260px);
+    -o-transform: translateX(-260px);
+    transform: translateX(-260px);
+}
+
+footer {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    /* Force Hardware Acceleration in WebKit */
+    //    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+footer.lateral-menu-is-open {
+    -webkit-transform: translateX(-260px);
+    -moz-transform: translateX(-260px);
+    -ms-transform: translateX(-260px);
+    -o-transform: translateX(-260px);
+    transform: translateX(-260px);
+}
+

@@ -1,0 +1,130 @@
+@charset 'UTF-8';
+// Categorizing CSS-Rules
+// 1. Box (margin, padding, display, etc.)
+// 2. Border & Background (border, border-radius, background-color)
+// 3. Text (color, font-size, text-transform, etc)
+// 4. Other Stuff (animations, transforms, etc)
+// 5. Avoid IDs
+// 6. Avoid !important
+// 7. Avoid Child Selector
+
+//  BEM
+// .block {}
+// .block__element {}
+// .block--modifier {}
+// .block__element--modifier {}
+
+// ---------- RESETS --------------
+
+// Reset default browser styles using Normalize (optional)
+// @import "../bower_components/normalize-css/normalize";
+// ---------- ICONS ---------------
+
+// Install FontAwesome for useful icons (optional)
+@import "../bower_components/fontawesome-free-6.1.1-web/scss/fontawesome";
+@import "../bower_components/fontawesome-free-6.1.1-web/scss/brands";
+@import "../bower_components/fontawesome-free-6.1.1-web/scss/regular";
+@import "../bower_components/fontawesome-free-6.1.1-web/scss/solid";
+
+// ---------- FRAMEWORKS ----------
+
+// Bootstrap v 4.4.1 Sass Library (optional)
+ @import "../bower_components/bootstrap/scss/bootstrap.scss";
+
+// Bourbon Sass Mixins (optional)
+@import "../bower_components/bourbon/bourbon";
+
+// ---------- COLORS --------------
+
+// ---------- QUERIES -------------
+
+// Responsive Breakpoints Sass Mixins (optional)
+@import "../bower_components/sass-mq/mq";
+
+// Responsive Breakpoints Sass Mixins (optional)
+// @import "mappy-breakpoints";
+
+// Responsive Typography using Modular Scale (optional)
+@import "../bower_components/modular-scale/modular-scale/stylesheets/modular-scale";
+
+// Responsive Typography integration with ms (optional)
+@import "../bower_components/typi/scss/typi";
+
+// Flex Grid
+// @import "_flex";
+
+// 1.Base
+
+// these are your defaults (html, body, h1, ul, etc)
+// is used for defaults like html, body, a, a:hover. This includes your CSS resets
+// and would often be in its own base CSS file or at the start of your main CSS.
+
+@import '_remote/ie';
+@import '_remote/_placeholders';
+
+
+// Mixins
+@import '_remote/mixins';
+@import '_remote/mixins-andy';
+@import '_remote/mixins-open-color';
+@import '_remote/family';
+@import '_remote/css3-mixins';
+
+/* Your Style Guide */
+@import '_styleguide/style-viewports';
+@import '_styleguide/style-colors';
+@import '_styleguide/style-sizes';
+@import '_styleguide/style-typography';
+@import '_styleguide/style-buttons';
+@import '_styleguide/style-forms';
+@import '_styleguide/style-main';
+
+
+// 2. Content
+
+//@import '_content/_cont-reset';
+@import '_content/_cont-presets';
+//@import '_content/_cont-typography';
+
+// 2.Layouts
+
+// These divide the page into major sections
+
+@import '_layouts/l-footer';
+@import '_layouts/l-header';
+@import '_layouts/l-sidebar';
+
+@import '_template/template-header-1';
+@import '_template/template-header-2';
+@import '_template/template-header-3';
+
+// 3.Modules
+
+// is a reusable, modular element in the design. The SMACSS documentation sees modules
+// as the majority of your elements and thus doesn’t require that you prefix them but you could do so // if you choose.
+
+@import '_components/c-accordions';
+@import '_components/c-alerts';
+@import '_components/c-carousel';
+@import '_components/c-media';
+@import '_components/c-nav';
+@import '_components/c-tables';
+@import '_components/c-tabs';
+@import '_components/c-others';
+@import '_components/c-icons-feather';
+@import '_components/c-avatars';
+@import '_components/c-tags';
+
+// 6. Pages
+
+//For Customized Pages Styles
+
+@import '_sections/s-hero';
+@import '_sections/s-about';
+
+// 6. Pages
+
+//For Customized Pages Styles
+
+@import '_docs/d-main';
+@import '_docs/d-code';

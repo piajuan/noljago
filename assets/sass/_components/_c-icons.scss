@@ -1,0 +1,64 @@
+// main: ../style.scss
+
+/*-------------------
+
+Icons Styles
+
+-------------------*/
+// 1.Config
+
+
+//<p class="icon-text-aligner">
+//  <svg class="icon"><use href="#icon-dog" xlink:href="#icon-dog"/></svg>
+//  <em>This is some text here</em>
+//</p>
+
+// 2.Base
+
+/* add this class to parent element that contains icon + text */
+.icon-text-aligner {
+    display: flex;
+    align-items: center;
+
+    > *:nth-child(2) {
+        margin-left: var(--space-xxs);
+    }
+    
+    em {
+        font-style: normal;
+    }
+
+    .icon {
+        color: inherit;
+        flex-shrink: 0;
+    }
+}
+
+.icon {
+    display: inline-block;
+    color: var(--color-icon-primary);
+    height: 1em;
+    width: 1em;
+    line-height: 1;
+}
+
+/* icon size */
+.icon--xs {
+    font-size: var(--icon-xs);
+}
+
+.icon--sm {
+    font-size: var(--icon-sm);
+}
+
+.icon--md {
+    font-size: var(--icon-md);
+}
+
+.icon--lg {
+    font-size: var(--icon-lg);
+}
+
+.icon--xl {
+    font-size: var(--icon-xl);
+}

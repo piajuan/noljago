@@ -1,0 +1,35 @@
+{
+  "name": "rfs",
+  "description": "A scss-mixin for responsive font-sizes.",
+  "main": "postcss/rfs.js",
+  "authors": [
+    "Martijn Cuppens <martijn.cuppens@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "rfs",
+    "scss",
+    "responsive",
+    "responsive-font-size",
+    "font-size",
+    "typography"
+  ],
+  "homepage": "https://github.com/twbs/rfs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "7.1.9",
+  "_release": "7.1.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "v7.1.9",
+    "commit": "5ed2ff2383668bb71a77c6112ae7b3892c7c9e7b"
+  },
+  "_source": "https://github.com/MartijnCuppens/rfs.git",
+  "_target": "^7.1.3",
+  "_originalSource": "rfs"
+}
