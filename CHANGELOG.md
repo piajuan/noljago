@@ -13,9 +13,15 @@ Removed for now removed features.
 Fixed for any bug fixes.
 Security in case of vulnerabilities.
 
-## [1.0.0] - YYYY-MM-DD
+## [1.0.0] - 2022-04-05
+
 ### Added
+- Added hero-carousel
+- Added the lower section of footer
+- Added search bar section
 
-### Removed
-
-### Changed
+## [1.0.0] - 2022-04-04
+### Added
+- Added header
+- Added sidebar nav
+- Added main footer

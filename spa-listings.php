@@ -71,6 +71,14 @@ include("header.php");
 
 </section>
 
+<!-- Search Bar -->
+<section class="nj-sec__search nj-sec__search--green">
+    <div class="frm__search-grp">
+        <input type="text" class="form-control frm__input" id="" placeholder="Search Wellness & Spa">
+        <button class="btn frm__search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+</section>
+
 <?php
 include("footer.php");
 ?>

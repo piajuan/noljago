@@ -1,0 +1,32 @@
+.nj-sec__search {
+    padding: var(--space-lg) 0;
+}
+
+.frm__search-grp {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.frm__search-btn {
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    width: 58px;
+    height: 58px;
+
+    justify-content: center;
+    padding: unset;
+
+    border-radius: 4px;
+}
+
+// MODS
+.nj-sec__search--green {
+    .frm__search-btn {
+        background: var(--color-base-green);
+        color: var(--color-base-white);
+    }
+}

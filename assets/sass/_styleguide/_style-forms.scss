@@ -1,7 +1,8 @@
 // main: ../style.scss
 
 :root {
-    --form-bg-color: #000;
+    --form-bg-color: #fff;
+    --form-border-color: var(--color-base-lightgray);
     --form-font-color-light: var(--color-base-white);
     --form-font-color-dark: #000;
     --form-label-color: var(--color-secondary);
@@ -26,30 +27,29 @@ form {
 .frm__input {
     background-color: var(--form-bg-color);
     @include x-rem(font-size, 16px);
-    border-radius: 0px;
-    color: var(--form-font-color-light);
-    border: 0px;
+    border-radius: 4px;
+    color: var(--form-font-color-dark);
+    border: 1px solid var(--form-border-color);
+    padding: var(--space-sm) var(--space-rg);
 
     &:focus,
     &:hover {
-        box-shadow: 0;
+        box-shadow: none;
         outline: 0;
-        background-color: var(--form-bg-color);
-        color: var(--color-base-white);
     }
 
     &::-webkit-input-placeholder {
         /* Edge */
-        color: var(--color-base-white);
+        color: var(--color-base-lightgray);
     }
 
     &:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
-        color: var(--color-base-white);
+        color: var(--color-base-lightgray);
     }
 
     &::placeholder {
-        color: var(--color-base-white);
+        color: var(--color-base-lightgray);
     }
 
 }
