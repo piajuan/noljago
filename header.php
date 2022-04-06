@@ -61,7 +61,7 @@ function current_file_url()
                                         <li class="nj-header__nav_item">
                                             <a class="nj-header__nav_icon" href="#"><i class="fe fe-search"></i></a>
                                         </li>
-                                        <li class="nj-header__nav_item">
+                                        <li class="nj-header__nav_item d-md-none">
                                             <a id="nj-menu-trigger" href="#0"><span class="nj-menu-text">Menu</span><span class="nj-menu-icon"></span></a>
                                         </li>
                                         <li class="nj-header__nav_item">

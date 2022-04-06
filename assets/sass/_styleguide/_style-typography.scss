@@ -7,33 +7,21 @@
 // see font.google.com and paste the css code here
 
 :root {
-    // Font Primary
-    --font-primary: "Montserrat-SemiBold", Arial, sans-serif;
+    // Font Primary 
+    --font-primary: 'Montserrat-SemiBold',
+    Arial,
+    sans-serif;
 
-    // Font Primary
-    --font-secondary: "Manrope-Regular", Arial, sans-serif;
+    // Font Primary 
+    --font-secondary: 'Manrope-Regular',
+    Arial,
+    sans-serif;
 
-    // set base values
+    /* set base values */
     --text-base-size: 1rem;
     --text-unit: var(--text-base-size);
-    --text-scale-ratio: 1.40;
+    --text-scale-ratio: 1.2;
 
-    @include mq($from: tablet-portrait) {
-        --text-base-size: 0.9rem;
-        --text-scale-ratio: 1.25;
-    }
-
-    @include mq($from: desktop-small) {
-        --text-base-size: 0.9rem;
-        --text-scale-ratio: 1.25;
-    }
-
-    @include mq($from: desktop-medium) {
-        --text-base-size: 1rem;
-        --text-scale-ratio: 1.2;
-    }
-
-    /* set color values */
     --color-text-heading: #000;
     --color-text-body: #000;
 
@@ -41,10 +29,22 @@
     --heading-line-height: 1.2;
     --body-line-height: 1.4;
 
+
+
+    @include mq($from: desktop-small) {
+        --text-scale-ratio: 1.25;
+        --text-base-size: 16px;
+    }
+
+    @include mq($from: desktop-medium) {
+        --text-scale-ratio: 1.25;
+        --text-base-size: 16px;
+        --body-line-height: 1.8;
+    }
+
     /* type scale */
     --text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
     --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-    --text-rg: calc(var(--text-sm) * var(--text-scale-ratio));
     --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
     --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
     --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
@@ -52,15 +52,6 @@
     --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
     --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
 }
-
-//   // use base size to create new value - off scale
-//   font-size: calc(var(--text-base-size) * 3);
-
-//   // use original font-size to create new value - off scale
-//   font-size: calc(var(--text-xxl) - 0.8em);
-
-//   // update the value of the font-size using a different variable
-//   font-size: var(--text-xl);
 
 body {
     font-size: var(--text-base-size);
@@ -87,66 +78,67 @@ h6 form legend {
 
 h1,
 .text--xxl {
-    font-size: var(--text-xxl);
+    font-size: var(--text-md);
 
-    // @include mq($from: tablet-portrait) {
-    //     font-size: var(--text-lg);
-    // }
+    @include mq($from: tablet-portrait) {
+        font-size: var(--text-lg);
+    }
 
-    // @include mq($from: desktop-small) {
-    //     font-size: var(--text-xl);
-    // }
+    @include mq($from: desktop-small) {
+        font-size: var(--text-xl);
+    }
 
-    // @include mq($from: desktop-large) {
-    //     font-size: var(--text-xxl);
-    // }
+    @include mq($from: desktop-large) {
+        font-size: var(--text-xxl);
+    }
 }
 
 h2,
 .text--xl {
-    font-size: var(--text-xl);
+    font-size: var(--text-md);
 
-    // @include mq($from: tablet-portrait) {
-    //     font-size: var(--text-xl);
-    // }
+    @include mq($from: tablet-portrait) {
+        font-size: var(--text-xl);
+    }
 }
 
 h3,
 .text--lg {
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
 
-    // @include mq($from: tablet-portrait) {
-    //     font-size: var(--text-lg);
+    @include mq($from: tablet-portrait) {
+        font-size: var(--text-lg);
 
-    // }
+    }
 }
 
 h4,
 .text--md {
-    font-size: var(--text-md);
+    font-size: var(--text-rg);
 
-    // @include mq($from: tablet-portrait) {
-    //     font-size: var(--text-md);
-    // }
+    @include mq($from: tablet-portrait) {
+        font-size: var(--text-md);
+    }
 }
 
 h5,
 .text--rg {
-    font-size: var(--text-rg);
+    font-size: var(--text-sm);
 
-    // @include mq($from: tablet-portrait) {
-    //     font-size: var(--text-rg);
-    // }
+    @include mq($from: tablet-portrait) {
+        font-size: var(--text-rg);
+    }
 }
 
 h6,
 .text--sm {
-    font-size: var(--text-sm);
+    font-size: var(--text-xs);
 
-    // @include mq($from: tablet-portrait) {
-    //     font-size: var(--text-sm);
-    // }
+    @include mq($from: tablet-portrait) {
+        font-size: var(--text-sm);
+    }
 }
+
 
 .text--sm,
 small {
@@ -232,6 +224,38 @@ ul {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.nj-excerpt {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.color--pink {
+    color: var(--color-base-pink);
+}
+
+.color--violet {
+    color: var(--color-base-violet);
+}
+
+.color--green {
+    color: var(--color-base-green);
+}
+
+.color--darkgray {
+    color: var(--color-base-darkgray);
+}
+
+.color--lightgray {
+    color: var(--color-base-lightgray);
 }
 
 // Modular Scale Applied for better typograhpy visit http://www.modularscale.com/

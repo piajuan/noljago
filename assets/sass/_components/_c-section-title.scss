@@ -1,0 +1,54 @@
+.nj-sec__title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: var(--space-md) 0 var(--space-lg);
+    text-align: center;
+
+    &::after {
+        content: '';
+        min-width: 80px;
+        width: 15%;
+        max-width: 180px;
+        height: 4px;
+
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        background-color: var(--color-base-darkgray);
+     
+    }
+}
+
+.nj-sec__subheading {
+    color: var(--color-base-darkgray);
+}
+
+.nj-sec__heading  {
+    color: var(--color-base-primary);
+    @include x-rem(font-size, 42px);
+}
+
+
+// MODS
+.nj-sec__title.nj-sec__title--green {
+    &::after {
+        background-color: var(--color-base-green);
+    }
+    .nj-sec__heading {
+        color: var(--color-base-green);
+    }
+}
+
+.nj-sec__title--violet {
+    &::after {
+        background-color: var(--color-base-violet);
+    }
+    .nj-sec__heading {
+        color: var(--color-base-violet);
+    }
+}
+

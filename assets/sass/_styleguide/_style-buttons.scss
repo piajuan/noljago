@@ -599,21 +599,21 @@ fieldset:disabled a.btn {
 }
 
 .btn--blue {
-    background-color: $oc-blue-7;
+    background-color: var(--color-base-blue);
     color: var(--btn-light-label);
 
     &:hover,
     &:focus {
-        background-color: $oc-blue-5;
+        background-color: var(--color-base-blue);
         color: var(--btn-light-label);
     }
 
     &:visited {
-        background-color: $oc-blue-7;
+        background-color: var(--color-base-blue);
         color: var(--btn-light-label);
 
         &:hover {
-            background-color: $oc-blue-7;
+            background-color: var(--color-base-blue);
         }
     }
 }
@@ -1058,6 +1058,34 @@ fieldset:disabled a.btn {
     margin-top: 0.5rem;
 }
 
+
+.btn--circle {
+    width: 40px;
+    height: 40px;
+    padding: unset;
+    border-radius: 50%;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--circle.btn--sm {
+    width: 25px;
+    height: 25px;
+
+}
+
+.btn--circle.btn--md {
+    width: 50px;
+    height: 50px;
+
+}
+.btn--circle.btn--lg {
+    width: 70px;
+    height: 70px;
+
+}
 /* buttons group */
 .btns {
     display: flex;
