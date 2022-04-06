@@ -169,10 +169,24 @@ var plugins = (function () {
         });
     };
 
+    // Discover Swiper 
+    const discoverSwiper = function() {
+        const swiper = new Swiper(".nj-discover__carousel .swiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 14,
+            loop: true,
+            navigation: {
+              nextEl: ".nj-discover__carousel .swiper-button-next",
+              prevEl: ".nj-discover__carousel .swiper-button-prev",
+            },
+        });
+    }
+
     function initialize() {
         headerOnScroll();
         sidebar();
         heroSwiper();
+        discoverSwiper();
     }
 
     return {

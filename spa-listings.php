@@ -365,7 +365,124 @@ include("header.php");
 
 <!-- Discover / Curated | Swiper -->
 <section class="nj-sec__discover">
+    <div class="container-fluid">
+        <div class="row align-items-end">
+            <div class="col-md-4">
+                <div class="nj-sec__title nj-sec__title--violet">
+                    <span class="nj-sec__subheading"> Curated Accomodations </span>
+                    <h1 class="nj-sec__heading">Discover <span class="color--darkgray">Your Perfect Escape</span></h1>
+                </div>
+                <p class="nj-sec__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda suscipit incidunt minima, quaerat deleniti repellendus excepturi voluptate maxime eum. Eaque sequi similique, dolores magni amet ipsa! Quasi earum aperiam, ipsam, placeat quis odit doloremque expedita recusandae consequatur vel tenetur!
+                </p>
+                <a href="#" class="btn btn--violet mb-4">View More Accomodation</a>
+            </div>
+            <div class="col-md-8 p-0">
+                <div class="nj-discover__carousel">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- Listing Item -->
+                                <div class="nj-listings__item">
+                                    <div class="nj-listings__card">
+                                        <img class="nj-thumb" src="assets/img/spa/l-1.jpeg" alt="">
+                                        <div class="nj-content">
+                                            <div class="nj-action-widget">
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                            </div>
+                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                            <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <a href="#" class="btn btn--violet">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Listing Item -->
+                            </div>
 
+                            <div class="swiper-slide">
+                                <!-- Listing Item -->
+                                <div class="nj-listings__item">
+                                    <div class="nj-listings__card">
+                                        <img class="nj-thumb" src="assets/img/spa/l-2.jpeg" alt="">
+                                        <div class="nj-content">
+                                            <div class="nj-action-widget">
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                            </div>
+                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                            <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <a href="#" class="btn btn--violet">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Listing Item -->
+                            </div>
+
+                            <div class="swiper-slide">
+                                <!-- Listing Item -->
+                                <div class="nj-listings__item">
+                                    <div class="nj-listings__card">
+                                        <img class="nj-thumb" src="assets/img/spa/l-3.jpeg" alt="">
+                                        <div class="nj-content">
+                                            <div class="nj-action-widget">
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                            </div>
+                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                            <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <a href="#" class="btn btn--violet">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Listing Item -->
+                            </div>
+
+                            <div class="swiper-slide">
+                                <!-- Listing Item -->
+                                <div class="nj-listings__item">
+                                    <div class="nj-listings__card">
+                                        <img class="nj-thumb" src="assets/img/spa/l-4.jpeg" alt="">
+                                        <div class="nj-content">
+                                            <div class="nj-action-widget">
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                            </div>
+                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                            <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <a href="#" class="btn btn--violet">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Listing Item -->
+                            </div>
+
+                            <div class="swiper-slide">
+                                <!-- Listing Item -->
+                                <div class="nj-listings__item">
+                                    <div class="nj-listings__card">
+                                        <img class="nj-thumb" src="assets/img/spa/l-5.jpeg" alt="">
+                                        <div class="nj-content">
+                                            <div class="nj-action-widget">
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                            </div>
+                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                            <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <a href="#" class="btn btn--violet">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Listing Item -->
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 

@@ -13,6 +13,12 @@ Removed for now removed features.
 Fixed for any bug fixes.
 Security in case of vulnerabilities.
 
+## [1.0.0] - 2022-04-06
+### Added
+- Added listings card section
+- Added pagination component
+- Added discover carousel
+
 ## [1.0.0] - 2022-04-05
 
 ### Added

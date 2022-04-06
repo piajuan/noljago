@@ -1,0 +1,58 @@
+.nj-sec__discover {
+    margin: var(--space-xl) 0;
+    @include mq($from: tablet-landscape) {
+        padding-left: 8vw;
+    }
+    @include mq($from: desktop-large) {
+        padding-left: 16vw;
+    }
+
+   
+}
+
+.nj-discover__carousel {
+    padding-left: var(--space-md);
+    .swiper-slide {
+        width:fit-content;
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next {
+        background:var(--color-base-white);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        right: 94px;
+        top: 40%;
+        &:before {
+            content: '';
+            border: dotted var(--color-base-darkgray) 1.5px;
+            width: 78%;
+            height: 78%;
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:after {
+            font-size: 28px !important;
+            color: var(--color-base-lightgray);
+            font-weight: 800;
+        }
+    }
+    .nj-listings__item {
+        width: 250px;
+
+        .nj-listings__card {
+            width: 100%;
+            height: 527px;
+        }
+    }
+
+    .nj-listings__item .nj-content {
+        align-items: flex-start;
+    }
+}
