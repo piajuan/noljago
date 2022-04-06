@@ -2,9 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: var(--space-md) 0 var(--space-lg);
-    text-align: center;
 
     &::after {
         content: '';
@@ -15,13 +13,14 @@
 
         position: absolute;
         bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
     
         background-color: var(--color-base-darkgray);
-     
     }
+
+   
 }
+
 
 .nj-sec__subheading {
     color: var(--color-base-darkgray);
@@ -33,7 +32,7 @@
 }
 
 
-// MODS
+// MODS -- COLOR
 .nj-sec__title.nj-sec__title--green {
     &::after {
         background-color: var(--color-base-green);
@@ -49,6 +48,18 @@
     }
     .nj-sec__heading {
         color: var(--color-base-violet);
+    }
+}
+
+// MODS -- ALIGNMENT
+ // MODS
+ .nj-sec__title.nj-sec__title--center {
+    justify-content: center;
+    text-align: center;
+
+    &::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 

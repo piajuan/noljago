@@ -86,13 +86,12 @@ include("header.php");
 
 </section>
 
-<!-- Listings Results -->
-
+<!-- Listings Search Results -->
 <section class="nj-sec__listings">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="nj-sec__title nj-sec__title--green">
+                <div class="nj-sec__title nj-sec__title--center nj-sec__title--green ">
                     <span class="nj-sec__subheading">A Healing Journey</span>
                     <h1 class="nj-sec__heading">Wellness <span class="color--darkgray">&</span> Spa</h1>
                 </div>
@@ -132,7 +131,7 @@ include("header.php");
                                 </div>
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
-                            <div class="text-center my-2">
+                            <div class="text-center mt-2">
                                 <a href="#" class="btn btn--green">Book Now</a>
 
                             </div>
@@ -174,7 +173,7 @@ include("header.php");
                                 </div>
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
-                            <div class="text-center my-2">
+                            <div class="text-center mt-2">
                                 <a href="#" class="btn btn--green">Book Now</a>
 
                             </div>
@@ -216,7 +215,7 @@ include("header.php");
                                 </div>
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
-                            <div class="text-center my-2">
+                            <div class="text-center mt-2">
                                 <a href="#" class="btn btn--green">Book Now</a>
 
                             </div>
@@ -258,7 +257,7 @@ include("header.php");
                                 </div>
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
-                            <div class="text-center my-2">
+                            <div class="text-center mt-2">
                                 <a href="#" class="btn btn--green">Book Now</a>
 
                             </div>
@@ -300,7 +299,49 @@ include("header.php");
                                 </div>
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
-                            <div class="text-center my-2">
+                            <div class="text-center mt-2">
+                                <a href="#" class="btn btn--green">Book Now</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/Listing Item -->
+
+                    <!-- Listing Item -->
+                    <div class="nj-listings__item">
+                        <div class="nj-listings__card">
+                            <img class="nj-thumb" src="assets/img/spa/l-1.jpeg" alt="">
+                            <div class="nj-content">
+                                <span class="tag tag--lime">Save as much as 15%</span>
+                                <div class="nj-action-widget">
+                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                </div>
+                                <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="nj-title">Bella Isa Salon & Spa</h3>
+                            <div class="nj-price-wrapper">
+                                <span class="nj-label">Starts</span>
+                                <span class="nj-price">P1,000</span>
+                            </div>
+                            <div class="nj-excerpt line-clamp">
+                                <p class="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates
+                                </p>
+                            </div>
+
+                            <div class="nj-engagement d-flex justify-content-between">
+                                <div>
+                                    <span class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</span>
+                                    <span class="nj-engagement__reacts"><i class="fa-regular fa-face-frown me-1"></i>76</span>
+                                </div>
+                                <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
+                            </div>
+                            <div class="text-center mt-2">
                                 <a href="#" class="btn btn--green">Book Now</a>
 
                             </div>
@@ -311,9 +352,23 @@ include("header.php");
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-10 offset-md-1 my-3">
+                <!-- Pagination  -->
+                <?php include("pagination.php"); ?>
+            </div>
+        </div>
     </div>
 
 </section>
+
+<!-- Discover / Curated | Swiper -->
+<section class="nj-sec__discover">
+
+</section>
+
+
 
 <?php
 include("footer.php");

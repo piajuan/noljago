@@ -10,3 +10,45 @@ Paginations
 
 
 // 2. Base
+.nj-pagination {
+    position: relative;
+    width: 100%;
+    margin: var(--space-md) 0;
+
+    display: flex;
+    justify-content: center;
+
+    .page-link {
+        border: none;
+        opacity: 0.8;
+        &:hover {
+            background-color: none;
+            font-family: var(--font-primary);
+        }
+    }
+
+    .page-item.active {
+        .page-link {
+            font-family: var(--font-primary);
+            background-color: transparent;
+            border-color: transparent;
+            color: var(--color-base-black);
+        }
+    }
+
+    .page-item--prev,
+    .page-item--next {
+        position: absolute;
+    }
+
+    .page-item--prev {
+        left: 0;
+    }
+
+    .page-item--next {
+        right: 0;
+    }
+
+    
+}
+
