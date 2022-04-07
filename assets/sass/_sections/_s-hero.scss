@@ -34,9 +34,21 @@
 .nj-hero__search-item {
     width: 33%;
     border-left: solid 1px var(--color-base-gray-50);
+    padding-right: var(--space-sm);
     
     .frm__icon {
         font-size: 32px;
+    }
+
+    .frm__input,
+    .frm__append {
+        opacity: 0.3;
+        transition: all 0.3s;
+    }
+
+    .frm__input:focus,
+    .frm__input:focus + .frm__append {
+        opacity: 1;
     }
 }
 

@@ -40,16 +40,16 @@ form {
 
     &::-webkit-input-placeholder {
         /* Edge */
-        color: var(--color-base-lightgray);
+        color: var(--color-base-gray-50);
     }
 
     &:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
-        color: var(--color-base-lightgray);
+        color: var(--color-base-gray-50);
     }
 
     &::placeholder {
-        color: var(--color-base-lightgray);
+        color: var(--color-base-gray-50);
     }
 
 }
@@ -60,16 +60,19 @@ form {
     @include x-rem(font-size, 22px);
     &::-webkit-input-placeholder {
         /* Edge */
-        color: var(--color-base-gray-50);
+        color: var(--color-base-gray-600);
+
     }
 
     &:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
-        color: var(--color-base-gray-50);
+        color: var(--color-base-gray-600);
+
     }
 
     &::placeholder {
-        color: var(--color-base-gray-50);
+        color: var(--color-base-gray-600);
+
     }
 }
 

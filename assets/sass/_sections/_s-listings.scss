@@ -80,11 +80,13 @@
 
     .nj-location {
         color: var(--color-base-white);
+        font-family: var(--font-primary-medium);
+        @include x-rem(font-size, 18px);
     }
 }
 
 // Top Rated Badge
 .nj-badge {
-    width: 45px;
+    width: 52px;
     object-fit: contain;
 }

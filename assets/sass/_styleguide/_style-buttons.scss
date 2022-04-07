@@ -7,11 +7,11 @@ Buttons
 // 1.Config
 :root {
     // -----------------  BUTTON OPTIONS  --------------------
-    --btn-font-size: 1.2em; // Global button font size
+    --btn-font-size: 1.5rem; // Global button font size
 
     --btn-radius: 8px; // Global button shapes (make it square if you want)
 
-    --btn-fonts: var(--font-primary); // Adjust this base on your need see style-typography.scss
+    --btn-fonts: var(--font-primary-extrabold); // Adjust this base on your need see style-typography.scss
 
     --btn-light-label: var(--color-base-white); //Adjust your color
 
@@ -84,7 +84,7 @@ Buttons
     transition: 0.2s;
 
     @include mq($from: desktop-small) {
-        padding: var(--space-rg) var(--space-lg);
+        padding: var(--space-sm) var(--space-md);
     }
 
     &:active {
@@ -738,21 +738,21 @@ fieldset:disabled a.btn {
 }
 
 .btn--orange {
-    background-color: $oc-orange-7;
+    background-color: var(--color-base-orange);
     color: var(--btn-light-label);
 
     &:hover,
     &:focus {
-        background-color: $oc-orange-5;
+        background-color: var(--color-base-orange);
         color: var(--btn-light-label);
     }
 
     &:visited {
-        background-color: $oc-orange-7;
+        background-color: var(--color-base-orange);
         color: var(--btn-light-label);
 
         &:hover {
-            background-color: $oc-orange-7;
+            background-color: var(--color-base-orange);
         }
     }
 }
