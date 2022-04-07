@@ -136,7 +136,7 @@ Header
 
   .nj-header__nav_icon {
     @extend .nj-header__nav_link;
-    color: var(--color-base-lightgray) !important;
+    color: var(--color-base-gray-50) !important;
     @include x-rem(font-size, 20px);
     padding: 0 0.15rem;
     margin: 0;

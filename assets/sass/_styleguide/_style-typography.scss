@@ -5,15 +5,116 @@
 //**
 
 // see font.google.com and paste the css code here
+// POPPINS
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// ROBOTO
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// INSANIBURGER WITH CHEESE
+@font-face {
+    font-family: 'InsaniburgerwithCheese';
+    src: url('../fonts/InsaniburgerwithCheese.woff2') format('woff2'),
+        url('../fonts/InsaniburgerwithCheese.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 :root {
     // Font Primary 
-    --font-primary: 'Montserrat-SemiBold',
+    --font-primary: 'Poppins-SemiBold',
     Arial,
     sans-serif;
 
-    // Font Primary 
-    --font-secondary: 'Manrope-Regular',
+    // Font Secondary
+    --font-secondary: 'Roboto-Regular',
+    Arial,
+    sans-serif;
+
+    // Font Tertiary
+    --font-tertiary: 'InsaniburgerwithCheese',
+    Arial,
+    sans-serif;
+
+    // Others
+    --font-primary-regular: 'Poppins-Regular',
+    Arial,
+    sans-serif;
+    --font-primary-medium: 'Poppins-Medium',
+    Arial,
+    sans-serif;
+   
+    --font-primary-bold: 'Poppins-Bold',
+    Arial,
+    sans-serif;
+    --font-primary-extrabold: 'Poppins-ExtraBold',
+    Arial,
+    sans-serif;
+
+
+    --font-secondary-medium: 'Roboto-Medium',
     Arial,
     sans-serif;
 
@@ -22,8 +123,8 @@
     --text-unit: var(--text-base-size);
     --text-scale-ratio: 1.2;
 
-    --color-text-heading: #000;
-    --color-text-body: #000;
+    --color-text-heading: var(--color-base-gray-700);
+    --color-text-body: var(--color-base-gray-600);
 
     /* line-height */
     --heading-line-height: 1.2;

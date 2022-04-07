@@ -1,0 +1,58 @@
+// main: ../style.scss
+
+.nj-sec__hero-carousel {
+    height: 567px;
+
+    .swiper-pagination {
+        bottom: 50px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--color-base-white);
+        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,17px));
+        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,17px));
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,6px);
+        opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: transparent;
+        border: solid 2px rgba($color: #FFFFFF, $alpha: 0.5);
+    }
+
+
+    .nj-hero__slide {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nj-hero__bg {
+        @extend %img-cover;
+    }
+
+    .nj-hero__content {
+        width: 100%;
+        height: fit-content;
+
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .btn {
+            margin-top: var(--space-rg);
+        }
+    }
+
+    .nj-hero__title {
+        color: var(--color-base-white);
+        @include x-rem(font-size, 70px);
+        margin-bottom: 0;
+    }
+}

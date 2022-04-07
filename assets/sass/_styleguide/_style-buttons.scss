@@ -617,6 +617,25 @@ fieldset:disabled a.btn {
         }
     }
 }
+.btn--lightblue {
+    background-color: var(--color-base-lightblue);
+    color: var(--btn-light-label);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-base-lightblue);
+        color: var(--btn-light-label);
+    }
+
+    &:visited {
+        background-color: var(--color-base-lightblue);
+        color: var(--btn-light-label);
+
+        &:hover {
+            background-color: var(--color-base-lightblue);
+        }
+    }
+}
 
 .btn--cyan {
     background-color: $oc-cyan-7;

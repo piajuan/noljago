@@ -1,57 +1,52 @@
-// main: ../style.scss
 
 .nj-sec__hero {
-    height: 567px;
-
-    .swiper-pagination {
-        bottom: 50px;
-    }
-
-    .swiper-pagination-bullet {
-        background-color: var(--color-base-white);
-        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,17px));
-        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,17px));
-        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,6px);
-        opacity: 0.5;
-    }
-
-    .swiper-pagination-bullet-active {
-        background-color: transparent;
-        border: solid 2px rgba($color: #FFFFFF, $alpha: 0.5);
-    }
-}
-
-.nj-hero__slide {
+    height: 600px;
+    background-color: var(--color-base-gray-50);
     position: relative;
-    height: 100%;
-    width: 100%;
+    margin-bottom: var(--space-xl);
 }
 
-.nj-hero__bg {
-    @extend %img-cover;
-}
-
-.nj-hero__content {
-    width: 100%;
-    height: fit-content;
-
+.nj-hero__wrapper {
     position: absolute;
     top: 60%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+
+// MODS
+.nj-sec__hero--blue {
+    background-color: var(--color-base-blue);
+}
+
+.nj-hero__search {
+    // max-width: 1159px;
+    margin: auto;
+    border-radius: 10px;
+    background: var(--color-base-white);
+    border: 0.5px solid #d9d8d6;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.1);
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    // flex-wrap: wrap;
+}
 
-    .btn {
-        margin-top: var(--space-rg);
+.nj-hero__search-item {
+    width: 33%;
+    border-left: solid 1px var(--color-base-gray-50);
+    
+    .frm__icon {
+        font-size: 32px;
     }
 }
 
-.nj-hero__title {
-    color: var(--color-base-white);
-    @include x-rem(font-size, 70px);
-    margin-bottom: 0;
+.nj-hero__display {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-xl) 0;
+
+    img {
+        width: 672px;
+        object-fit: contain;
+    }
 }

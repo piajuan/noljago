@@ -2,88 +2,69 @@
 include("header.php");
 ?>
 
-
-<!-- Hero Banner | Swiper -->
-<section class="nj-sec__hero">
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="nj-hero__slide">
-                    <img class="nj-hero__bg" src="assets/img/spa/placeholder-1.jpeg" />
-                    <div class="nj-hero__content">
-                        <h2 class="nj-hero__title">The Farm</h2>
-                        <div class="nj-info__wrapper">
-                            <span class="nj-info__span"><i class="fa-solid fa-circle-chevron-up me-1"></i>4262</span>
-                            <span class="nj-info__span"><i class="fa-solid fa-circle-chevron-down me-1"></i>21</span>
-                            <span class="nj-info__span ms-2"><i class="fa-solid fa-location-dot me-1"></i>4262</span>
-                        </div>
-                        <a class="btn btn--green" href="#">Read More</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-slide">
-                <div class="nj-hero__slide">
-                    <img class="nj-hero__bg" src="assets/img/spa/placeholder-2.jpeg" />
-                    <div class="nj-hero__content">
-                        <h2 class="nj-hero__title">The Farm</h2>
-                        <div class="nj-info__wrapper">
-                            <span class="nj-info__span"><i class="fa-solid fa-circle-chevron-up me-1"></i>4262</span>
-                            <span class="nj-info__span"><i class="fa-solid fa-circle-chevron-down me-1"></i>21</span>
-                            <span class="nj-info__span ms-2"><i class="fa-solid fa-location-dot me-1"></i>4262</span>
-                        </div>
-                        <a class="btn btn--green" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="nj-hero__slide">
-                    <img class="nj-hero__bg" src="assets/img/spa/placeholder-3.jpeg" />
-                    <div class="nj-hero__content">
-                        <h2 class="nj-hero__title">The Farm</h2>
-                        <div class="nj-info__wrapper">
-                            <span class="nj-info__span"><i class="fa-solid fa-circle-chevron-up me-1"></i>4262</span>
-                            <span class="nj-info__span"><i class="fa-solid fa-circle-chevron-down me-1"></i>21</span>
-                            <span class="nj-info__span ms-2"><i class="fa-solid fa-location-dot me-1"></i>4262</span>
-                        </div>
-                        <a class="btn btn--green" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="nj-hero__slide">
-                    <img class="nj-hero__bg" src="assets/img/spa/placeholder-4.jpeg" />
-                    <div class="nj-hero__content">
-                        <h2 class="nj-hero__title">The Farm</h2>
-                        <div class="nj-info__wrapper">
-                            <span class="nj-info__span"><i class="fa-solid fa-circle-chevron-up me-1"></i>4262</span>
-                            <span class="nj-info__span"><i class="fa-solid fa-circle-chevron-down me-1"></i>21</span>
-                            <span class="nj-info__span ms-2"><i class="fa-solid fa-location-dot me-1"></i>4262</span>
-                        </div>
-                        <a class="btn btn--green" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-
-</section>
-
-<!-- Search Bar -->
-<section class="nj-sec__search nj-sec__search--green">
+<!-- Hero | Search -->
+<section class="nj-sec__hero nj-sec__hero--blue">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="frm__search-grp">
-                    <input type="text" class="form-control frm__input" id="" placeholder="Search Wellness & Spa">
-                    <button class="btn frm__search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="nj-hero__wrapper">
+                    <div class="nj-hero__search">
+                        <div class="nj-hero__search-item">
+                            <div class="frm__grp">
+                                <div class="frm__append">
+                                    <i class="frm__icon fa-solid fa-magnifying-glass-location"></i>
+                                </div>
+                                <input class="frm__input frm__input--bold" type="text" placeholder="what do you want to do?">
+                            </div>
+                        </div>
+                        <div class="nj-hero__search-item">
+                            <div class="frm__grp">
+                                <!-- <div class="frm__append">
+                                    <i class="frm__icon fa-regular fa-magnifying-glass-location"></i>
+                                </div> -->
+                                <input class="frm__input frm__input--bold" type="date" placeholder="when you want to go?">
+                            </div>
+                        </div>
+                        <div class="nj-hero__search-item">
+                            <div class="frm__grp">
+                                <div class="frm__append">
+                                    <i class="frm__icon fa-solid fa-circle-chevron-down"></i>
+                                </div>
+                                <select class="frm__input frm__input--bold" name="" id="">
+                                    <option value="">Solo</option>
+                                    <option value="">Lorem</option>
+                                    <option value="">Lorem</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nj-hero__display">
+                        <img src="assets/img/logo/noljago-white.png" alt="">
+                    </div>
+                    <div class="nj-nav__wrapper">
+                        <ul class="nj-nav__list">
+                            <li class="nj-nav__item nj-nav__item--orange">
+                                <a class="nj-nav__link" href="#">Community Post</a>
+                            </li>
+                            <li class="nj-nav__item nj-nav__item--violet">
+                                <a class="nj-nav__link" href="#">Accommodations</a>
+                            </li>
+                            <li class="nj-nav__item nj-nav__item--pink">
+                                <a class="nj-nav__link" href="#">activities</a>
+                            </li>
+                            <li class="nj-nav__item nj-nav__item--green">
+                                <a class="nj-nav__link" href="#">food and drinks</a>
+                            </li>
+                            <li class="nj-nav__item nj-nav__item--blue">
+                                <a class="nj-nav__link active" href="#">food and drinks</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 
 <!-- Listings Search Results -->
@@ -105,8 +86,8 @@ include("header.php");
                             <div class="nj-content">
                                 <span class="tag tag--lime">Save as much as 15%</span>
                                 <div class="nj-action-widget">
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                 </div>
                                 <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                 <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -132,7 +113,7 @@ include("header.php");
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
                             <div class="text-center mt-2">
-                                <a href="#" class="btn btn--green">Book Now</a>
+                                <a href="#" class="btn btn--blue">Book Now</a>
 
                             </div>
                         </div>
@@ -147,8 +128,8 @@ include("header.php");
                             <div class="nj-content">
                                 <span class="tag tag--lime">Save as much as 15%</span>
                                 <div class="nj-action-widget">
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                 </div>
                                 <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                 <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -174,7 +155,7 @@ include("header.php");
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
                             <div class="text-center mt-2">
-                                <a href="#" class="btn btn--green">Book Now</a>
+                                <a href="#" class="btn btn--blue">Book Now</a>
 
                             </div>
                         </div>
@@ -189,8 +170,8 @@ include("header.php");
                             <div class="nj-content">
                                 <span class="tag tag--lime">Save as much as 15%</span>
                                 <div class="nj-action-widget">
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                 </div>
                                 <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                 <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -216,7 +197,7 @@ include("header.php");
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
                             <div class="text-center mt-2">
-                                <a href="#" class="btn btn--green">Book Now</a>
+                                <a href="#" class="btn btn--blue">Book Now</a>
 
                             </div>
                         </div>
@@ -231,8 +212,8 @@ include("header.php");
                             <div class="nj-content">
                                 <span class="tag tag--lime">Save as much as 15%</span>
                                 <div class="nj-action-widget">
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                 </div>
                                 <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                 <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -258,7 +239,7 @@ include("header.php");
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
                             <div class="text-center mt-2">
-                                <a href="#" class="btn btn--green">Book Now</a>
+                                <a href="#" class="btn btn--blue">Book Now</a>
 
                             </div>
                         </div>
@@ -273,8 +254,8 @@ include("header.php");
                             <div class="nj-content">
                                 <span class="tag tag--lime">Save as much as 15%</span>
                                 <div class="nj-action-widget">
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                 </div>
                                 <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                 <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -300,7 +281,7 @@ include("header.php");
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
                             <div class="text-center mt-2">
-                                <a href="#" class="btn btn--green">Book Now</a>
+                                <a href="#" class="btn btn--blue">Book Now</a>
 
                             </div>
                         </div>
@@ -315,8 +296,8 @@ include("header.php");
                             <div class="nj-content">
                                 <span class="tag tag--lime">Save as much as 15%</span>
                                 <div class="nj-action-widget">
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                    <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                 </div>
                                 <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                 <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -342,7 +323,7 @@ include("header.php");
                                 <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
                             </div>
                             <div class="text-center mt-2">
-                                <a href="#" class="btn btn--green">Book Now</a>
+                                <a href="#" class="btn btn--blue">Book Now</a>
 
                             </div>
                         </div>
@@ -388,8 +369,8 @@ include("header.php");
                                         <img class="nj-thumb" src="assets/img/spa/l-1.jpeg" alt="">
                                         <div class="nj-content">
                                             <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                             </div>
                                             <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                             <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -407,8 +388,8 @@ include("header.php");
                                         <img class="nj-thumb" src="assets/img/spa/l-2.jpeg" alt="">
                                         <div class="nj-content">
                                             <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                             </div>
                                             <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                             <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -426,8 +407,8 @@ include("header.php");
                                         <img class="nj-thumb" src="assets/img/spa/l-3.jpeg" alt="">
                                         <div class="nj-content">
                                             <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                             </div>
                                             <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                             <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -445,8 +426,8 @@ include("header.php");
                                         <img class="nj-thumb" src="assets/img/spa/l-4.jpeg" alt="">
                                         <div class="nj-content">
                                             <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                             </div>
                                             <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                             <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
@@ -464,8 +445,8 @@ include("header.php");
                                         <img class="nj-thumb" src="assets/img/spa/l-5.jpeg" alt="">
                                         <div class="nj-content">
                                             <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--blue"><i class="fa-solid fa-share-nodes"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
+                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
                                             </div>
                                             <img src="assets/img/badge/top-rated.png" class="nj-badge" />
                                             <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>

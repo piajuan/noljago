@@ -119,13 +119,15 @@
 @import '_components/c-info-details';
 @import '_components/c-section-title';
 @import '_components/c-widget';
+@import '_components/c-nav-tabs';
 
 // 6. Pages
 
 //For Customized Pages Styles
 
+@import '_sections/s-hero-carousel';
 @import '_sections/s-hero';
-@import '_sections/s-search';
+// @import '_sections/s-search';
 @import '_sections/s-listings';
 @import '_sections/s-discover';
 

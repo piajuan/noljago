@@ -181,12 +181,12 @@ p.nj-footer__list_link {
     }
     .nj-footer__list_item {
         font-family: var(--font-primary);
-        color: var(--color-base-darkgray);
+        color: var(--color-base-gray-500);
     }
 
     .nj-footer__list_link {
         font-family: var(--font-primary);
-        color: var(--color-base-darkgray);
+        color: var(--color-base-gray-500);
 
         &:hover {
             
@@ -212,7 +212,7 @@ p.nj-footer__list_link {
             transform: translateY(-50%);
             right: -15px;
 
-            background-color: var(--color-base-darkgray);
+            background-color: var(--color-base-gray-500);
             border-radius: 50%;
         }
     }
@@ -228,14 +228,14 @@ p.nj-footer__list_link {
         // margin-right: var(--space-rg);
     }
     .nj-footer__list_link {
-       color: var(--color-base-lightgray);
+       color: var(--color-base-gray-500);
        @include x-rem(font-size, 30px);
        padding: var(--space-xxxs) var(--space-xxs);
     }
 }
 
 .nj-footer__disclaimer {
-    color: var(--color-base-lightgray);
+    color: var(--color-base-gray-100);
     opacity: 0.8;
     text-align: center;
     margin: var(--space-md) 0;

@@ -1,0 +1,94 @@
+.nj-nav__list {
+    display: flex;
+}
+
+.nj-nav__link {
+    position: relative; 
+    display: block;
+    min-width: 270px;
+    padding: var(--space-sm) var(--space-md);
+    @include x-rem(font-size, 24px);
+    font-family: var(--font-primary-bold);
+    background-color: var(--color-base-gray-100);
+    color: var(--color-base-white) !important;
+    text-decoration: none;
+   
+    text-align: center;
+    text-transform: uppercase;
+    
+
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 24px solid var(--color-base-gray-100);
+
+        position: absolute;
+        left: 50%;
+        bottom: -22px;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    &.active::after {
+        opacity: 1;
+    }
+
+}
+
+.nj-nav__item {
+    &:first-child .nj-nav__link {
+        border-radius: 8px 0 0 8px;
+    }
+
+    &:last-child .nj-nav__link {
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    &--orange {
+        .nj-nav__link {
+            background-color: var(--color-base-orange);
+        }
+        .nj-nav__link.active:after {
+            border-top-color: var(--color-base-orange);
+        }
+    }
+    &--violet {
+        .nj-nav__link {
+            background-color: var(--color-base-violet);
+        }
+        .nj-nav__link.active:after {
+            border-top-color: var(--color-base-violet);
+        }
+    }
+    &--pink {
+        .nj-nav__link {
+            background-color: var(--color-base-pink);
+        }
+        .nj-nav__link.active:after {
+            border-top-color: var(--color-base-pink);
+        }
+    }
+    &--green {
+        .nj-nav__link {
+            background-color: var(--color-base-green);
+        }
+        .nj-nav__link.active:after {
+            border-top-color: var(--color-base-green);
+        }
+    }
+    &--blue {
+        .nj-nav__link {
+            background-color: var(--color-base-blue);
+        }
+        .nj-nav__link.active:after {
+            border-top-color: var(--color-base-blue);
+        }
+    }
+}
+
+
+

@@ -48,12 +48,12 @@ function current_file_url()
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="nj-header__wrapper">
-                        <div class="nj-header__block">
+                    <div class="nj-header__wrapper justify-content-end">
+                        <!-- <div class="nj-header__block">
                             <a class="nj-header__brand mr-3" href="index.php">
                                 <img src="assets/img/brand-logo.png" alt="">
                             </a>
-                        </div>
+                        </div> -->
                         <div class="nj-header__block">
                             <div class="nj-header__secondary">
                                 <nav class="nj-header__nav">
@@ -61,7 +61,7 @@ function current_file_url()
                                         <li class="nj-header__nav_item">
                                             <a class="nj-header__nav_icon" href="#"><i class="fe fe-search"></i></a>
                                         </li>
-                                        <li class="nj-header__nav_item d-md-none">
+                                        <li class="nj-header__nav_item">
                                             <a id="nj-menu-trigger" href="#0"><span class="nj-menu-text">Menu</span><span class="nj-menu-icon"></span></a>
                                         </li>
                                         <li class="nj-header__nav_item">
@@ -70,7 +70,7 @@ function current_file_url()
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="nj-header__primary nj-header__block--desktopOnly">
+                            <!-- <div class="nj-header__primary nj-header__block--desktopOnly">
                                 <nav class="nj-header__nav">
                                     <ul class="nj-header__nav_list">
                                         <li class="nj-header__nav_item">
@@ -90,7 +90,7 @@ function current_file_url()
                                         </li>
                                     </ul>
                                 </nav>
-                            </div>
+                            </div> -->
 
                         </div>
                         <!-- <div class="nj-header__block nj-header__block--mobileOnly">

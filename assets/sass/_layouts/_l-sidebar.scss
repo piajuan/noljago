@@ -71,7 +71,7 @@ Sidebar
 
     width: 18px;
     height: 2px;
-    background-color: var(--color-base-lightgray);
+    background-color: var(--color-base-gray-50);
 
     /* these are the upper and lower lines in the menu menu */
     @include mq($from: tablet-portrait) {

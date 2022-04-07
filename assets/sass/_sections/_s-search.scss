@@ -1,4 +1,6 @@
-.nj-sec__search {
+/***** search bar-v1 section *****/
+
+.nj-sec__search-bar {
     padding: var(--space-lg) 0;
 }
 
@@ -24,9 +26,11 @@
 }
 
 // MODS
-.nj-sec__search--green {
+.nj-sec__search-bar--green {
     .frm__search-btn {
         background: var(--color-base-green);
         color: var(--color-base-white);
     }
 }
+
+/***** end of search bar-v1 section *****/

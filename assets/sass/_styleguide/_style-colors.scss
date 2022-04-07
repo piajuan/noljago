@@ -4,15 +4,25 @@
     // COLORS
     --color-base-white:                         #fff;
     --color-base-black:                         #000;
-    --color-base-pink:                          #E83E72;
+    --color-base-pink:                          #E73F72;
     --color-base-violet:                        #562E74;
-    --color-base-green:                         #119978;
-    --color-base-orange:                        #F7941D;
-    --color-base-blue:                          #2FBBF0;
+    --color-base-green:                         #00A481;
+
+    --color-base-orange:                        #F29220;
+
+    --color-base-blue:                          #0993BE;
+    --color-base-lightblue:                           #2FBBF0;
+
     --color-base-lime:                          #CED749;
 
-    --color-base-darkgray:                      #505050;
-    --color-base-lightgray:                     #ACACAC;
+    --color-base-gray-50:                       #D9D8D6;  // header icons / placeholder
+    --color-base-gray-100:                      #C3C3C3;  // disclaimer msg / swiper next
+    --color-base-gray-200:                      #BBBBBB;  // line-decor on headings
+    --color-base-gray-300:                      #ACACAC;  // reacts/replies / menu icons
+    --color-base-gray-400:                      #98989A;  // buttons
+    --color-base-gray-500:                      #898989;  // social media icons, hyperlink
+    --color-base-gray-600:                      #707070;  // paragraphs
+    --color-base-gray-700:                      #505050;  // headings
 
     // Primary Colors
     --color-primary:                            var(--color-base-pink);
@@ -20,8 +30,6 @@
     --color-tertiary:                           var(--color-base-green);
 
     // Neutral Shades
-
-    --color-neutral-00:                         #E6E6E6;
 
 
     --color-success:                            #{$oc-green-5};

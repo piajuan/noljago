@@ -54,6 +54,25 @@ form {
 
 }
 
+.frm__input--bold {
+    color: var(--color-base-gray-600);
+    font-family: var(--font-primary-extrabold);
+    @include x-rem(font-size, 22px);
+    &::-webkit-input-placeholder {
+        /* Edge */
+        color: var(--color-base-gray-50);
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: var(--color-base-gray-50);
+    }
+
+    &::placeholder {
+        color: var(--color-base-gray-50);
+    }
+}
+
 .frm__input--outline {
     border-width: 1px;
     border-style: solid;
@@ -97,5 +116,27 @@ form {
 
     &:focus {
         // box-shadow: 0px 0px 0px 2px alpha(var(--color-error), 0.2);
+    }
+}
+
+// Form group with append icons
+.frm__grp {
+    position: relative;
+
+    .frm__input {
+        width: 100%;
+    }
+
+    .frm__append {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 40px;
+    
+        background-color: var(--color-base-white);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 }
