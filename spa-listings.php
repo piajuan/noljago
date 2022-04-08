@@ -71,7 +71,7 @@ include("header.php");
             <div class="col-md-12">
                 <div class="nj-sec__title nj-sec__title--center nj-sec__title--green ">
                     <span class="nj-sec__subheading">A Healing Journey</span>
-                    <h1 class="nj-sec__heading">Wellness <span class="color--darkgray">&</span> Spa</h1>
+                    <h1 class="nj-sec__heading">Wellness <span class="color--gray-600">&</span> Spa</h1>
                 </div>
 
                 <!-- Listing cards -->
@@ -83,19 +83,36 @@ include("header.php");
                             <div class="nj-content">
                                 <span class="tag tag--lime">Save as much as 15%</span>
                                 <div class="nj-action-widget">
-                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
-                                    <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
-                                    <button class="btn btn--circle btn--orange"><i class="fa-solid fa-plus"></i></button>
+                                    <button class="btn btn--circle btn--lightblue">
+                                        <?php echo file_get_contents("assets/img/icons/ic-heart.svg"); ?>
+                                    </button>
+                                    <button class="btn btn--circle btn--lightblue">
+                                        <?php echo file_get_contents("assets/img/icons/ic-share.svg"); ?>
+                                    </button>
+                                    <button class="btn btn--circle btn--orange">
+                                        <?php echo file_get_contents("assets/img/icons/ic-plus.svg"); ?>
+                                    </button>
+
                                 </div>
-                                <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
+                                <ul class="nj-rating" data-rating="3.5">
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                </ul>
                                 <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
                             </div>
                         </div>
                         <div class="p-3">
                             <h3 class="nj-title">Bella Isa Salon & Spa</h3>
                             <div class="nj-price-wrapper">
-                                <span class="nj-label">Starts</span>
-                                <span class="nj-price">P1,000</span>
+                                <div class="d-flex flex-column">
+                                    <span class="nj-price">P1,000</span>
+                                    <span class="nj-price nj-price--old">P1,000</span>
+                                </div>
+                                <div class="tag tag--lime flex-column">50% Off Span <span class="ff--primary text-center">Ends at 1PM</span> </div>
                             </div>
                             <div class="nj-excerpt line-clamp">
                                 <p class="">
@@ -103,7 +120,12 @@ include("header.php");
                                 </p>
                             </div>
 
-                            <div class="text-center mt-2">
+                            <div class="nj-addt-info nj-addt-info--lime my-2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text">Instant Confirmation</span>
+                            </div>
+
+                            <div class="text-center mt-3">
                                 <a href="#" class="btn btn--blue">Book Now</a>
 
                             </div>

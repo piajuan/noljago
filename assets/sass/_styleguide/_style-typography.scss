@@ -351,12 +351,38 @@ ul {
     color: var(--color-base-green);
 }
 
-.color--darkgray {
-    color: var(--color-base-darkgray);
+.color--gray-50 {
+    color: var(--color-base-gray-50);
+}
+.color--gray-100 {
+    color: var(--color-base-gray-100);
+}
+.color--gray-200 {
+    color: var(--color-base-gray-200);
+}
+.color--gray-300 {
+    color: var(--color-base-gray-300);
+}
+.color--gray-400 {
+    color: var(--color-base-gray-400);
+}
+.color--gray-500 {
+    color: var(--color-base-gray-500);
+}
+.color--gray-600 {
+    color: var(--color-base-gray-600);
 }
 
-.color--lightgray {
-    color: var(--color-base-lightgray);
+.ff--primary {
+    font-family: var(--font-primary) !important;
+}
+
+.ff--secondary {
+    font-family: var(--font-secondary) !important;
+}
+
+.ff--tertiary {
+    font-family: var(--font-tertiary) !important;
 }
 
 // Modular Scale Applied for better typograhpy visit http://www.modularscale.com/

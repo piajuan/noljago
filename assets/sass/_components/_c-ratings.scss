@@ -1,0 +1,55 @@
+:root {
+    --star-rating-color: var(--color-base-yellow);
+}
+
+%full-star {
+    &:after {
+      content: "\f005";
+    }
+  };
+  
+  %half-star {
+    &:after {
+      content: "\f089";
+    }
+  };
+  
+  .nj-rating {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.2rem;
+    color: var(--star-rating-color);
+    $this: &;
+  
+    &__item {
+      font-size: 22px;
+      display: block;
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      
+      &::after {
+        content: '\f006 ';
+      }
+    }
+  
+    @for $i from 0 to 6 {
+      &[data-rating='#{$i}'] {
+        #{$this}__item:nth-child(-n + #{$i}) {
+          @extend %full-star;
+        }
+      }
+  
+      &[data-rating='#{$i + 0.5}'] {
+        #{$this}__item:nth-child(-n + #{$i}) {
+          @extend %full-star;
+        }
+  
+        #{$this}__item:nth-child(#{$i + 1}) {
+          @extend %half-star;
+        }
+      }
+    }
+  }
+  

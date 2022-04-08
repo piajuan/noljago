@@ -4,6 +4,10 @@
     background-color: var(--color-base-gray-50);
     position: relative;
     margin-bottom: var(--space-xl);
+
+    // &::after {
+    //     content: url('../img/design/go-lg.png');
+    // }
 }
 
 .nj-hero__wrapper {
@@ -33,8 +37,11 @@
 
 .nj-hero__search-item {
     width: 33%;
-    border-left: solid 1px var(--color-base-gray-50);
     padding-right: var(--space-sm);
+
+    &:not(:last-child) {
+        border-right: solid 1px var(--color-base-gray-50);
+    }
     
     .frm__icon {
         font-size: 32px;
