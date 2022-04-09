@@ -21,9 +21,16 @@ Paginations
     .page-link {
         border: none;
         opacity: 0.8;
-        &:hover {
-            background-color: none;
-            font-family: var(--font-primary);
+        @include x-rem(font-size, 20px);
+        font-family: var(--font-secondary-medium);
+        color: var(--color-base-gray-50);
+        transition: all 0.3s;
+
+        &:hover,
+        &:focus,
+        &:focus-within {
+            background-color: transparent;
+            color: var(--color-base-gray-700);
         }
     }
 
@@ -32,13 +39,32 @@ Paginations
             font-family: var(--font-primary);
             background-color: transparent;
             border-color: transparent;
-            color: var(--color-base-black);
+            color: var(--color-base-gray-700);
         }
     }
 
+    .page-item.active ~ .page-item {
+        .page-link {
+            color: var(--color-base-gray-400);
+
+            &:hover {
+                color: var(--color-base-gray-700);
+            }
+        }
+
+    }
+
+
+    // arrows
     .page-item--prev,
     .page-item--next {
         position: absolute;
+
+        .page-link {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--color-base-gray-600) !important;
+        }
     }
 
     .page-item--prev {
@@ -49,6 +75,5 @@ Paginations
         right: 0;
     }
 
-    
 }
 

@@ -71,7 +71,7 @@ include("header.php");
             <div class="col-md-12">
                 <div class="nj-sec__title nj-sec__title--center nj-sec__title--green ">
                     <span class="nj-sec__subheading">A Healing Journey</span>
-                    <h1 class="nj-sec__heading">Wellness <span class="color--gray-600">&</span> Spa</h1>
+                    <h1 class="nj-sec__heading">Wellness <span class="color--gray-700">&</span> Spa</h1>
                 </div>
 
                 <!-- Listing cards -->
@@ -82,20 +82,10 @@ include("header.php");
                             <img class="nj-thumb" src="assets/img/spa/l-4.jpeg" alt="">
                             <div class="nj-content">
                                 <span class="tag tag--lime">Save as much as 15%</span>
-                                <div class="nj-action-widget">
-                                    <button class="btn btn--circle btn--lightblue">
-                                        <?php echo file_get_contents("assets/img/icons/ic-heart.svg"); ?>
-                                    </button>
-                                    <button class="btn btn--circle btn--lightblue">
-                                        <?php echo file_get_contents("assets/img/icons/ic-share.svg"); ?>
-                                    </button>
-                                    <button class="btn btn--circle btn--orange">
-                                        <?php echo file_get_contents("assets/img/icons/ic-plus.svg"); ?>
-                                    </button>
-
-                                </div>
+                                <!--  action-widget (heart,share,add) -->
+                                <?php include("action-widget.php"); ?>
                                 <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
-                                <ul class="nj-rating" data-rating="3.5">
+                                <ul class="nj-rating" data-rating="4.5">
                                     <li class="nj-rating__item"></li>
                                     <li class="nj-rating__item"></li>
                                     <li class="nj-rating__item"></li>
@@ -105,8 +95,8 @@ include("header.php");
                                 <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
                             </div>
                         </div>
-                        <div class="p-3">
-                            <h3 class="nj-title">Bella Isa Salon & Spa</h3>
+                        <div class="nj-listings__info">
+                            <h3 class="nj-name">Bella Isa Salon & Spa</h3>
                             <div class="nj-price-wrapper">
                                 <div class="d-flex flex-column">
                                     <span class="nj-price">P1,000</span>
@@ -134,7 +124,101 @@ include("header.php");
                     </div>
                     <!--/Listing Item -->
 
+                    <!-- Listing Item -->
+                    <div class="nj-listings__item">
+                        <div class="nj-listings__card">
+                            <img class="nj-thumb" src="assets/img/spa/l-6.jpeg" alt="">
+                            <div class="nj-content">
+                                <span class="tag tag--lime">Save as much as 15%</span>
+                                <!--  action-widget (heart,share,add) -->
+                                <?php include("action-widget.php"); ?>
+                                <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
+                                <ul class="nj-rating" data-rating="2">
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                </ul>
+                                <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                            </div>
+                        </div>
+                        <div class="nj-listings__info">
+                            <h3 class="nj-name">Bella Isa Salon & Spa</h3>
+                            <div class="nj-price-wrapper">
+                                <div class="d-flex flex-column">
+                                    <span class="nj-price">P1,000</span>
+                                    <span class="nj-price nj-price--old">P1,000</span>
+                                </div>
+                                <div class="tag tag--lime flex-column">50% Off Span <span class="ff--primary text-center">Ends at 1PM</span> </div>
+                            </div>
+                            <div class="nj-excerpt line-clamp">
+                                <p class="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates
+                                </p>
+                            </div>
 
+                            <div class="nj-addt-info nj-addt-info--lime my-2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text">Instant Confirmation</span>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a href="#" class="btn btn--blue">Book Now</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/Listing Item -->
+
+                    <!-- Listing Item -->
+                    <div class="nj-listings__item">
+                        <div class="nj-listings__card">
+                            <img class="nj-thumb" src="assets/img/spa/l-2.jpeg" alt="">
+                            <div class="nj-content">
+                                <span class="tag tag--lime">Save as much as 15%</span>
+                                <!--  action-widget (heart,share,add) -->
+                                <?php include("action-widget.php"); ?>
+                                <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
+                                <ul class="nj-rating" data-rating="5">
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                </ul>
+                                <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                            </div>
+                        </div>
+                        <div class="nj-listings__info">
+                            <h3 class="nj-name">Bella Isa Salon & Spa</h3>
+                            <div class="nj-price-wrapper">
+                                <div class="d-flex flex-column">
+                                    <span class="nj-price">P1,000</span>
+                                    <span class="nj-price nj-price--old">P1,000</span>
+                                </div>
+                                <div class="tag tag--lime flex-column">50% Off Span <span class="ff--primary text-center">Ends at 1PM</span> </div>
+                            </div>
+                            <div class="nj-excerpt line-clamp">
+                                <p class="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates
+                                </p>
+                            </div>
+
+                            <div class="nj-addt-info nj-addt-info--lime my-2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text">Instant Confirmation</span>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a href="#" class="btn btn--blue">Book Now</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/Listing Item -->
                 </div>
             </div>
         </div>
@@ -156,10 +240,10 @@ include("header.php");
             <div class="col-md-4">
                 <div class="nj-sec__title nj-sec__title--violet">
                     <span class="nj-sec__subheading"> Curated Accomodations </span>
-                    <h1 class="nj-sec__heading">Discover <span class="color--darkgray">Your Perfect Escape</span></h1>
+                    <h1 class="nj-sec__heading">Discover <span class="color--gray-700">Your Perfect Escape</span></h1>
                 </div>
                 <p class="nj-sec__desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda suscipit incidunt minima, quaerat deleniti repellendus excepturi voluptate maxime eum. Eaque sequi similique, dolores magni amet ipsa! Quasi earum aperiam, ipsam, placeat quis odit doloremque expedita recusandae consequatur vel tenetur!
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
                 </p>
                 <a href="#" class="btn btn--violet mb-4">View More Accomodation</a>
             </div>
@@ -169,92 +253,133 @@ include("header.php");
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <!-- Listing Item -->
-                                <div class="nj-listings__item">
-                                    <div class="nj-listings__card">
-                                        <img class="nj-thumb" src="assets/img/spa/l-1.jpeg" alt="">
-                                        <div class="nj-content">
-                                            <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
-                                            </div>
-                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
-                                            <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
-                                            <a href="#" class="btn btn--violet">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/Listing Item -->
-                            </div>
-
-                            <div class="swiper-slide">
-                                <!-- Listing Item -->
-                                <div class="nj-listings__item">
+                                <div class="nj-listings__item nj-listings__item--tall">
                                     <div class="nj-listings__card">
                                         <img class="nj-thumb" src="assets/img/spa/l-2.jpeg" alt="">
                                         <div class="nj-content">
-                                            <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
-                                            </div>
-                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                            <!--  action-widget (heart,share,add) -->
+                                            <?php include("action-widget.php"); ?>
+                                            <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
                                             <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <h3 class="nj-name">La Carmela de Boracay Hotel</h3>
+
+                                            <!-- reacts/replies -->
+                                            <div class="nj-engagement nj-engagement--blue d-flex justify-content-between">
+                                                <div>
+                                                    <span class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</span>
+                                                    <span class="nj-engagement__reacts"><i class="fa-regular fa-face-frown me-1"></i>76</span>
+                                                </div>
+                                                <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
+                                            </div>
+
                                             <a href="#" class="btn btn--violet">Read More</a>
                                         </div>
                                     </div>
                                 </div>
                                 <!--/Listing Item -->
                             </div>
-
                             <div class="swiper-slide">
                                 <!-- Listing Item -->
-                                <div class="nj-listings__item">
+                                <div class="nj-listings__item nj-listings__item--tall">
                                     <div class="nj-listings__card">
                                         <img class="nj-thumb" src="assets/img/spa/l-3.jpeg" alt="">
                                         <div class="nj-content">
-                                            <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
-                                            </div>
-                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                            <!--  action-widget (heart,share,add) -->
+                                            <?php include("action-widget.php"); ?>
+                                            <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
                                             <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <h3 class="nj-name">La Carmela de Boracay Hotel</h3>
+
+                                            <!-- reacts/replies -->
+                                            <div class="nj-engagement nj-engagement--blue d-flex justify-content-between">
+                                                <div>
+                                                    <span class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</span>
+                                                    <span class="nj-engagement__reacts"><i class="fa-regular fa-face-frown me-1"></i>76</span>
+                                                </div>
+                                                <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
+                                            </div>
+
                                             <a href="#" class="btn btn--violet">Read More</a>
                                         </div>
                                     </div>
                                 </div>
                                 <!--/Listing Item -->
                             </div>
-
                             <div class="swiper-slide">
                                 <!-- Listing Item -->
-                                <div class="nj-listings__item">
+                                <div class="nj-listings__item nj-listings__item--tall">
                                     <div class="nj-listings__card">
                                         <img class="nj-thumb" src="assets/img/spa/l-4.jpeg" alt="">
                                         <div class="nj-content">
-                                            <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
-                                            </div>
-                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                            <!--  action-widget (heart,share,add) -->
+                                            <?php include("action-widget.php"); ?>
+                                            <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
                                             <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <h3 class="nj-name">La Carmela de Boracay Hotel</h3>
+
+                                            <!-- reacts/replies -->
+                                            <div class="nj-engagement nj-engagement--blue d-flex justify-content-between">
+                                                <div>
+                                                    <span class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</span>
+                                                    <span class="nj-engagement__reacts"><i class="fa-regular fa-face-frown me-1"></i>76</span>
+                                                </div>
+                                                <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
+                                            </div>
+
                                             <a href="#" class="btn btn--violet">Read More</a>
                                         </div>
                                     </div>
                                 </div>
                                 <!--/Listing Item -->
                             </div>
-
                             <div class="swiper-slide">
                                 <!-- Listing Item -->
-                                <div class="nj-listings__item">
+                                <div class="nj-listings__item nj-listings__item--tall">
                                     <div class="nj-listings__card">
                                         <img class="nj-thumb" src="assets/img/spa/l-5.jpeg" alt="">
                                         <div class="nj-content">
-                                            <div class="nj-action-widget">
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-heart"></i></button>
-                                                <button class="btn btn--circle btn--lightblue"><i class="fa-solid fa-share-nodes"></i></button>
-                                            </div>
-                                            <img src="assets/img/badge/top-rated.png" class="nj-badge" />
+                                            <!--  action-widget (heart,share,add) -->
+                                            <?php include("action-widget.php"); ?>
+                                            <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
                                             <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <h3 class="nj-name">La Carmela de Boracay Hotel</h3>
+
+                                            <!-- reacts/replies -->
+                                            <div class="nj-engagement nj-engagement--blue d-flex justify-content-between">
+                                                <div>
+                                                    <span class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</span>
+                                                    <span class="nj-engagement__reacts"><i class="fa-regular fa-face-frown me-1"></i>76</span>
+                                                </div>
+                                                <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
+                                            </div>
+
+                                            <a href="#" class="btn btn--violet">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/Listing Item -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- Listing Item -->
+                                <div class="nj-listings__item nj-listings__item--tall">
+                                    <div class="nj-listings__card">
+                                        <img class="nj-thumb" src="assets/img/spa/l-1.jpeg" alt="">
+                                        <div class="nj-content">
+                                            <!--  action-widget (heart,share,add) -->
+                                            <?php include("action-widget.php"); ?>
+                                            <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
+                                            <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                                            <h3 class="nj-name">La Carmela de Boracay Hotel</h3>
+
+                                            <!-- reacts/replies -->
+                                            <div class="nj-engagement nj-engagement--blue d-flex justify-content-between">
+                                                <div>
+                                                    <span class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</span>
+                                                    <span class="nj-engagement__reacts"><i class="fa-regular fa-face-frown me-1"></i>76</span>
+                                                </div>
+                                                <span class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</span>
+                                            </div>
+
                                             <a href="#" class="btn btn--violet">Read More</a>
                                         </div>
                                     </div>
@@ -271,7 +396,60 @@ include("header.php");
     </div>
 </section>
 
+<!-- Section divider -->
+<div class="nj-sec__divider"></div>
 
+<!-- Newsletter Form -->
+<section class="nj-sec__newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nj-sec__title nj-sec__title--center nj-sec__title--gray">
+                    <span class="nj-sec__subheading">Pack Your Bags and Hit The Grid</span>
+                    <h1 class="nj-sec__heading">Receive Travel Plan and Updates</h1>
+                </div>
+            </div>
+
+            <!-- form -->
+            <form action="">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row my-2">
+                        <div class="col-md-6">
+                            <div class="frm__group form-group">
+                                <input type="text" class="frm__input" id="sample-fname" data-validation="strength" data-validation-strength="2" required>
+                                <label class="frm__label" for="sample-fname">First Name (Required)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frm__group form-group">
+                                <input type="text" class="frm__input" id="sample-lname" data-validation="strength" data-validation-strength="2" required>
+                                <label class="frm__label" for="sample-lname">Last Name (Required)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-6">
+                            <div class="frm__group form-group">
+                                <input type="email" class="frm__input" id="sample-email" data-validation="strength" data-validation-strength="2" required>
+                                <label class="frm__label" for="email">Email Address (Required)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="frm__group form-group">
+                                <input type="text" class="frm__input" id="sample-mobile" data-validation="strength" data-validation-strength="2">
+                                <label class="frm__label" for="sample-mobile">Mobile Number (Optional)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+
+    </div>
+
+</section>
 
 <?php
 include("footer.php");

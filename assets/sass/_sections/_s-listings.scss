@@ -8,16 +8,62 @@
     }
 }
 
-.nj-listings__item {
-    .nj-title {
+.nj-listings__card {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    border-radius: 17px;
+
+    .nj-thumb {
+        @extend %img-cover;
+    }
+}
+
+.nj-listings__card .nj-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.5rem;
+
+    padding: var(--space-rg);
+
+    .tag {
+        position: absolute;
+        top: var(--space-rg);
+        left: 0;
+    }
+
+    .nj-action-widget {
+        position: absolute;
+        top: var(--space-md);
+        right: var(--space-rg);
+    }
+
+    .nj-location {
+        color: var(--color-base-white);
+        font-family: var(--font-primary-medium);
+        @include x-rem(font-size, 18px);
+    }
+}
+
+.nj-listings__info {
+    padding: var(--space-sm) var(--space-rg);
+
+    .nj-name {
         color: var(--color-base-darkgray);
         @include x-rem(font-size, 21px);
     }
 
-    .nj-excerp p {
+    .nj-excerpt p {
         line-height: 1;
         margin-bottom: var(--space-sm);
-        font-family: var(--font-secondary-medium);
         @include x-rem(font-size, 18px);
         line-height: 1.3;
     }
@@ -59,47 +105,31 @@
     }
 }
 
-.nj-listings__card {
-    position: relative;
-    width: 100%;
-    height: 270px;
-    overflow: hidden;
-    border-radius: 17px;
 
-    .nj-thumb {
-        @extend %img-cover;
-    }
-}
+// MODS
+.nj-listings__item--tall {
+    width: 315px;
 
-.nj-listings__card .nj-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-    padding: var(--space-rg);
-
-    .tag {
-        position: absolute;
-        top: var(--space-rg);
-        left: 0;
+    .nj-listings__card {
+        width: 100%;
+        height: 697px;
     }
 
-    .nj-action-widget {
-        position: absolute;
-        top: var(--space-md);
-        right: var(--space-rg);
+    .nj-content {
+        align-items: flex-start;
     }
 
-    .nj-location {
+    .nj-name {
+        font-family: var(--font-primary);
+        @include x-rem(font-size, 20px);
         color: var(--color-base-white);
-        font-family: var(--font-primary-medium);
-        @include x-rem(font-size, 18px);
+        margin-bottom: 0;
+    }
+
+    .nj-badge {
+        position: unset;
+        top: unset;
+        left: unset;
     }
 }
 

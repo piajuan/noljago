@@ -42,6 +42,15 @@ main {
     // min-height: 100%;
 }
 
+a,
+.page-link {
+    &:focus,
+    &:focus-visible {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
 .nj-main-content {
     /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
     position: relative;

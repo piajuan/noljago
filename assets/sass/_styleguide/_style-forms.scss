@@ -2,10 +2,10 @@
 
 :root {
     --form-bg-color: #fff;
-    --form-border-color: var(--color-base-lightgray);
+    --form-border-color: #636060;
     --form-font-color-light: var(--color-base-white);
     --form-font-color-dark: #000;
-    --form-label-color: var(--color-secondary);
+    --form-label-color: #BCBCBC;
 }
 
 form {
@@ -13,15 +13,28 @@ form {
     height: auto;
 }
 
+.frm__group {
+    position: relative;
+    margin-top: var(--space-md);
+}
 
 .frm__label {
-    color: var(--form-font-color-light);
-    @include x-rem(font-size, 16px);
-    font-family: var(--font-primary);
+    background: var(--color-base-white);
+    width: 94%;
+    color: var(--form-label-color);
+    @include x-rem(font-size, 14px);
+    font-family: var(--font-secondary);
+
+    transition: 0.2s ease all;
+    position: absolute;
+    top: 12px;
+    left: 12px;
 
     .frm__label--required {
         color: $oc-red-5;
     }
+
+   
 }
 
 .frm__input {
@@ -31,11 +44,23 @@ form {
     color: var(--form-font-color-dark);
     border: 1px solid var(--form-border-color);
     padding: var(--space-sm) var(--space-rg);
+    width: 100%;
 
     &:focus,
     &:hover {
         box-shadow: none;
         outline: 0;
+        border-color: var(--color-base-gray-600);
+    }
+
+    &:focus + label,
+    &:valid + label {
+        @include x-rem(font-size, 12px);
+        font-family: var(--font-primary);
+        color: var(--color-base-gray-600);
+        background-color: transparent;
+        left: 0px;
+        top: -20px;
     }
 
     &::-webkit-input-placeholder {
@@ -57,6 +82,7 @@ form {
 .frm__input--bold {
     color: var(--color-base-gray-600);
     font-family: var(--font-primary-extrabold);
+    border-color: transparent !important;
     @include x-rem(font-size, 22px);
     &::-webkit-input-placeholder {
         /* Edge */
