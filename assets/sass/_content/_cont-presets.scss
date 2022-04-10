@@ -51,6 +51,13 @@ a,
     }
 }
 
+.nj-sec__divider {
+    @extend .container;
+    height: 0px;
+    background: transparent;
+    border: 1px solid #d9d8d6;
+}
+
 .nj-main-content {
     /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
     position: relative;

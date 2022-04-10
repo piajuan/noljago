@@ -38,31 +38,34 @@ include("header.php");
                     <div class="nj-hero__display">
                         <img src="assets/img/logo/noljago-white.png" alt="">
                     </div>
-                    <div class="nj-nav__wrapper">
-                        <ul class="nj-nav__list">
-                            <li class="nj-nav__item nj-nav__item--orange">
-                                <a class="nj-nav__link" href="#">Community Post</a>
-                            </li>
-                            <li class="nj-nav__item nj-nav__item--violet">
-                                <a class="nj-nav__link" href="#">Accommodations</a>
-                            </li>
-                            <li class="nj-nav__item nj-nav__item--pink">
-                                <a class="nj-nav__link" href="#">activities</a>
-                            </li>
-                            <li class="nj-nav__item nj-nav__item--green">
-                                <a class="nj-nav__link" href="#">food and drinks</a>
-                            </li>
-                            <li class="nj-nav__item nj-nav__item--blue">
-                                <a class="nj-nav__link active" href="#">food and drinks</a>
-                            </li>
-                        </ul>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Nav Tab -->
+<div class="nj-sec__nav">
+    <div class="nj-nav__wrapper">
+        <ul class="nj-nav__list">
+            <li class="nj-nav__item nj-nav__item--orange">
+                <a class="nj-nav__link" href="#">Community Post</a>
+            </li>
+            <li class="nj-nav__item nj-nav__item--violet">
+                <a class="nj-nav__link" href="#">Accommodations</a>
+            </li>
+            <li class="nj-nav__item nj-nav__item--pink">
+                <a class="nj-nav__link" href="#">activities</a>
+            </li>
+            <li class="nj-nav__item nj-nav__item--green">
+                <a class="nj-nav__link" href="#">food and drinks</a>
+            </li>
+            <li class="nj-nav__item nj-nav__item--blue">
+                <a class="nj-nav__link active" href="#">Wellness & Spa</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 <!-- Listings Search Results -->
 <section class="nj-sec__listings">
@@ -76,6 +79,150 @@ include("header.php");
 
                 <!-- Listing cards -->
                 <div class="nj-listings__wrapper">
+                    <!-- Listing Item -->
+                    <div class="nj-listings__item">
+                        <div class="nj-listings__card">
+                            <img class="nj-thumb" src="assets/img/spa/l-4.jpeg" alt="">
+                            <div class="nj-content">
+                                <span class="tag tag--lime">Save as much as 15%</span>
+                                <!--  action-widget (heart,share,add) -->
+                                <?php include("action-widget.php"); ?>
+                                <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
+                                <ul class="nj-rating" data-rating="4.5">
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                </ul>
+                                <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                            </div>
+                        </div>
+                        <div class="nj-listings__info">
+                            <h3 class="nj-name">Bella Isa Salon & Spa</h3>
+                            <div class="nj-price-wrapper">
+                                <div class="d-flex flex-column">
+                                    <span class="nj-price">P1,000</span>
+                                    <span class="nj-price nj-price--old">P1,000</span>
+                                </div>
+                                <div class="tag tag--lime flex-column">50% Off Span <span class="ff--primary text-center">Ends at 1PM</span> </div>
+                            </div>
+                            <div class="nj-excerpt line-clamp">
+                                <p class="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates
+                                </p>
+                            </div>
+
+                            <div class="nj-addt-info nj-addt-info--lime my-2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text">Instant Confirmation</span>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a href="#" class="btn btn--blue">Book Now</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/Listing Item -->
+
+                    <!-- Listing Item -->
+                    <div class="nj-listings__item">
+                        <div class="nj-listings__card">
+                            <img class="nj-thumb" src="assets/img/spa/l-6.jpeg" alt="">
+                            <div class="nj-content">
+                                <span class="tag tag--lime">Save as much as 15%</span>
+                                <!--  action-widget (heart,share,add) -->
+                                <?php include("action-widget.php"); ?>
+                                <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
+                                <ul class="nj-rating" data-rating="2">
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                </ul>
+                                <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                            </div>
+                        </div>
+                        <div class="nj-listings__info">
+                            <h3 class="nj-name">Bella Isa Salon & Spa</h3>
+                            <div class="nj-price-wrapper">
+                                <div class="d-flex flex-column">
+                                    <span class="nj-price">P1,000</span>
+                                    <span class="nj-price nj-price--old">P1,000</span>
+                                </div>
+                                <div class="tag tag--lime flex-column">50% Off Span <span class="ff--primary text-center">Ends at 1PM</span> </div>
+                            </div>
+                            <div class="nj-excerpt line-clamp">
+                                <p class="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates
+                                </p>
+                            </div>
+
+                            <div class="nj-addt-info nj-addt-info--lime my-2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text">Instant Confirmation</span>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a href="#" class="btn btn--blue">Book Now</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/Listing Item -->
+
+                    <!-- Listing Item -->
+                    <div class="nj-listings__item">
+                        <div class="nj-listings__card">
+                            <img class="nj-thumb" src="assets/img/spa/l-2.jpeg" alt="">
+                            <div class="nj-content">
+                                <span class="tag tag--lime">Save as much as 15%</span>
+                                <!--  action-widget (heart,share,add) -->
+                                <?php include("action-widget.php"); ?>
+                                <img src="assets/img/badge/top-rated.svg" class="nj-badge" />
+                                <ul class="nj-rating" data-rating="5">
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                    <li class="nj-rating__item"></li>
+                                </ul>
+                                <span class="nj-location"><i class="fa-solid fa-location-dot me-1"></i>Station 2, Boracay</span>
+                            </div>
+                        </div>
+                        <div class="nj-listings__info">
+                            <h3 class="nj-name">Bella Isa Salon & Spa</h3>
+                            <div class="nj-price-wrapper">
+                                <div class="d-flex flex-column">
+                                    <span class="nj-price">P1,000</span>
+                                    <span class="nj-price nj-price--old">P1,000</span>
+                                </div>
+                                <div class="tag tag--lime flex-column">50% Off Span <span class="ff--primary text-center">Ends at 1PM</span> </div>
+                            </div>
+                            <div class="nj-excerpt line-clamp">
+                                <p class="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates Quae maxime repellendus unde sit, libero laborum? Illo molestias odit commodi voluptates
+                                </p>
+                            </div>
+
+                            <div class="nj-addt-info nj-addt-info--lime my-2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="text">Instant Confirmation</span>
+                            </div>
+
+                            <div class="text-center mt-3">
+                                <a href="#" class="btn btn--blue">Book Now</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/Listing Item -->
+
                     <!-- Listing Item -->
                     <div class="nj-listings__item">
                         <div class="nj-listings__card">
@@ -415,30 +562,41 @@ include("header.php");
                 <div class="col-md-8 offset-md-2">
                     <div class="row my-2">
                         <div class="col-md-6">
-                            <div class="frm__group form-group">
-                                <input type="text" class="frm__input" id="sample-fname" data-validation="strength" data-validation-strength="2" required>
+                            <div class="frm__grp">
+                                <input type="text" class="frm__input form-control" id="sample-fname" data-validation="strength" data-validation-strength="2" required>
                                 <label class="frm__label" for="sample-fname">First Name (Required)</label>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="frm__group form-group">
-                                <input type="text" class="frm__input" id="sample-lname" data-validation="strength" data-validation-strength="2" required>
+                            <div class="frm__grp">
+                                <input type="text" class="frm__input form-control" id="sample-lname" data-validation="strength" data-validation-strength="2" required>
                                 <label class="frm__label" for="sample-lname">Last Name (Required)</label>
                             </div>
                         </div>
                     </div>
                     <div class="row my-2">
                         <div class="col-md-6">
-                            <div class="frm__group form-group">
-                                <input type="email" class="frm__input" id="sample-email" data-validation="strength" data-validation-strength="2" required>
-                                <label class="frm__label" for="email">Email Address (Required)</label>
+                            <div class="frm__grp">
+                                <input type="email" class="frm__input form-control" id="sample-email" data-validation="strength" data-validation-strength="2" required>
+                                <label class="frm__label" for="sample-email">Email Address (Required)</label>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="frm__group form-group">
-                                <input type="text" class="frm__input" id="sample-mobile" data-validation="strength" data-validation-strength="2">
+                            <div class="frm__grp">
+                                <input type="text" class="frm__input form-control" id="sample-mobile">
                                 <label class="frm__label" for="sample-mobile">Mobile Number (Optional)</label>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                            <div class="form-check my-3">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                                <label class="form-check-label ms-2" for="defaultCheck1">I’m happy to receive emails from Noljago*</label>
+                            </div>
+
+                            <!-- Submit -->
+                            <input type="submit" class="btn btn--gray mt-2" value="Subscribe">
                         </div>
                     </div>
                 </div>

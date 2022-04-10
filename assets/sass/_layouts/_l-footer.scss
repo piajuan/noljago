@@ -19,11 +19,28 @@ Footer
     height: auto;
     // background-image: url(../img/background/footer-bg.png);
     // @extend %bg-image;
-}
 
 // default bg color if there's no mod added
 .nj-footer__primary {
     background-color: var(--color-primary);
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        content: url('../img/design/go-lg.png');
+        display: block;
+        width: 1045px;
+        height: 862px;
+        object-fit: contain;
+
+        mix-blend-mode: multiply;
+       
+        position: absolute;
+        top: -55%;
+        right: 25%;
+        transform: scale(0.4);
+    }
+}
 }
 
 .nj-footer__primary .nj-footer__wrapper {
@@ -51,7 +68,7 @@ Footer
     }
 
     @include mq($from: desktop-small) {
-        padding: var(--space-xl) 0;
+        padding: var(--space-xxl) 0;
 
         .nj-footer__block--rg {
             max-width: 30% !important;
@@ -69,8 +86,8 @@ Footer
 
 .nj-footer__brand {
     width: auto;
-    height: 72px;
-    margin-bottom: var(--space-md);
+    height: 95px;
+    margin-bottom: var(--space-lg);
     img {
         width: auto;
         height: 100%;
@@ -96,13 +113,22 @@ Footer
     }
 }
 
-.nj-footer__block_heading,
-.nj-footer__block h1 {
-    text-transform: uppercase;
+
+.nj-footer__block_heading {
+    font-family: var(--font-tertiary);
+    color: var(--color-base-white);
+    @include x-rem(font-size, 35px);
+    min-height: 72px;
+    margin-bottom: var(--space-md);
+}
+
+.nj-footer__block_subheading {
     font-family: var(--font-primary);
     color: var(--color-base-white);
-    @include x-rem(font-size, 20px);
+    @include x-rem(font-size, 26px);
     margin-bottom: var(--space-sm);
+    letter-spacing: -0.02em;
+
 }
 
 .nj-footer__list {
@@ -118,10 +144,12 @@ Footer
 
 
 .nj-footer__list_link {
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary-medium);
+    @include x-rem(font-size, 18px);
     color: var(--footer-text-color);
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    letter-spacing: -0.02em;
 
     &:hover {
         opacity: 0.5;
@@ -156,7 +184,7 @@ p.nj-footer__list_link {
 }
 
 // PRIMARY FOOTER
-.nj-footer__primary .nj-footer__block_heading {
+.nj-footer__primary .nj-footer__block_subheading {
     // border-bottom: var(--color-base-white) 2px solid;
 
     @include mq($from: tablet-portrait) {
@@ -167,6 +195,10 @@ p.nj-footer__list_link {
         width: 100%; 
         border: none;
     }
+}
+
+.nj-footer__primary .nj-footer__list_item {
+    margin-bottom: var(--space-xs);
 }
 
 // SECONDARY FOOTER 
@@ -219,6 +251,7 @@ p.nj-footer__list_link {
     .nj-footer__list_link,
     .nj-footer__list_text {
         text-transform: uppercase;
+        @include x-rem(font-size, 18px);
     }
 }
 
@@ -239,6 +272,8 @@ p.nj-footer__list_link {
     opacity: 0.8;
     text-align: center;
     margin: var(--space-md) 0;
+    @include x-rem(font-size, 18px);
+
 }
 
 // MODS
@@ -257,6 +292,11 @@ p.nj-footer__list_link {
 .nj-footer--green {
     .nj-footer__primary {
         background-color: var(--color-base-green);
+    }
+}
+.nj-footer--blue {
+    .nj-footer__primary {
+        background-color: var(--color-base-blue);
     }
 }
 

@@ -103,6 +103,7 @@
 // is a reusable, modular element in the design. The SMACSS documentation sees modules
 // as the majority of your elements and thus doesn’t require that you prefix them but you could do so // if you choose.
 
+
 @import '_components/c-accordions';
 @import '_components/c-alerts';
 @import '_components/c-avatars';
@@ -110,6 +111,7 @@
 @import '_components/c-engagements';
 @import '_components/c-icons-feather';
 @import '_components/c-info-details';
+@import '_components/c-keyframes';
 @import '_components/c-media';
 // @import '_components/c-nav';
 @import '_components/c-nav-tabs';
@@ -132,6 +134,7 @@
 // @import '_sections/s-search';
 @import '_sections/s-listings';
 @import '_sections/s-discover';
+@import '_sections/s-newsletter';
 
 // 6. Pages
 

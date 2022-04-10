@@ -4,9 +4,22 @@
     background-color: var(--color-base-gray-50);
     position: relative;
     margin-bottom: var(--space-xl);
+    padding: var(--space-rg) 0;
+    // overflow-x: hidden;
+    // overflow-y: visible;
 
-    // &::after {
+
+    // &::before {
     //     content: url('../img/design/go-lg.png');
+    //     display: block;
+    //     transform: scale(1);
+
+    //     position: absolute;
+    //     left: -20%;
+    //     top: -30%;
+
+    //     mix-blend-mode: multiply;
+
     // }
 }
 
@@ -16,6 +29,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
+
 }
 
 // MODS
@@ -24,7 +38,7 @@
 }
 
 .nj-hero__search {
-    // max-width: 1159px;
+    width: 100%;
     margin: auto;
     border-radius: 10px;
     background: var(--color-base-white);
@@ -32,17 +46,31 @@
     box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.1);
 
     display: flex;
-    // flex-wrap: wrap;
+    flex-direction: column;
+
+    @include mq($from: tablet-landscape) {
+        flex-direction: row;
+    }
+
+    @include mq($from: desktop-small) {
+        width: 1159px;
+    }
 }
 
 .nj-hero__search-item {
-    width: 33%;
+    width: 100%;
     padding-right: var(--space-sm);
+
+    @include mq($from: tablet-landscape) {
+        width: 33%;
+    }
 
     &:not(:last-child) {
         border-right: solid 1px var(--color-base-gray-50);
     }
-    
+    .frm__grp {
+        margin: 0;
+    }
     .frm__icon {
         font-size: 32px;
     }

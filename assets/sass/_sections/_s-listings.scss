@@ -15,8 +15,16 @@
     overflow: hidden;
     border-radius: 17px;
 
+    &:hover {
+        .nj-thumb {
+            transform: scale(1.1);
+        }
+    }
+
     .nj-thumb {
         @extend %img-cover;
+        transition: transform 2s ease-in-out;
+        transform-origin: center center;
     }
 }
 

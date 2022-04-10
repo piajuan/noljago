@@ -73,6 +73,7 @@ Buttons
     text-decoration: none;
     line-height: 1;
 
+
     //    margin: 0 var(--space-md) 0 0;
     margin: 0;
     padding: var(--space-sm) var(--space-rg);
@@ -80,6 +81,8 @@ Buttons
     font-size: var(--btn-font-size);
     color: var(--color-link);
     font-family: var(--btn-fonts);
+    letter-spacing: -0.04em;
+    line-height: 21.6px;
 
     transition: 0.2s;
 
@@ -479,21 +482,21 @@ fieldset:disabled a.btn {
 /* Other Colors */
 
 .btn--gray {
-    background-color: $oc-gray-7;
+    background-color: var(--color-base-gray-400);
     color: var(--btn-light-label);
 
     &:hover,
     &:focus {
-        background-color: $oc-gray-5;
+        background-color: var(--color-base-gray-400);
         color: var(--btn-light-label);
     }
 
     &:visited {
-        background-color: $oc-gray-7;
+        background-color: var(--color-base-gray-400);
         color: var(--btn-light-label);
 
         &:hover {
-            background-color: $oc-gray-7;
+            background-color: var(--color-base-gray-400);
         }
     }
 }

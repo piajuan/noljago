@@ -1,5 +1,17 @@
+.nj-sec__nav {
+    margin: -84px auto var(--space-lg);
+    width: 100%;
+ 
+}
+.nj-nav__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .nj-nav__list {
     display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .nj-nav__link {
@@ -15,6 +27,7 @@
    
     text-align: center;
     text-transform: uppercase;
+    white-space: nowrap;
     
 
     &::after {
@@ -40,6 +53,7 @@
 }
 
 .nj-nav__item {
+    margin-bottom: var(--space-md);
     &:first-child .nj-nav__link {
         border-radius: 8px 0 0 8px;
     }
