@@ -94,6 +94,11 @@ Buttons
         transition: none;
     }
 
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
     .icon {
         /* icon inherits color of button label */
         color: inherit;

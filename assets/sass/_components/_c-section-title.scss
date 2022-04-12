@@ -4,6 +4,14 @@
     flex-direction: column;
     margin: var(--space-md) 0 var(--space-lg);
 
+    justify-content: center;
+    text-align: center;
+
+    &::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     &::after {
         content: '';
         width: 240px;
@@ -11,24 +19,39 @@
 
         position: absolute;
         bottom: -5px;
-        left: 0;
     
         background-color: var(--color-base-gray-200);
     }
 
-   
+    @include mq($from: tablet-landscape) {
+        text-align: left;
+        justify-content: flex-start;
+
+        &::after {
+            left: 0;
+            transform: unset;
+        }
+    }
 }
 
 
 .nj-sec__subheading {
     color: var(--color-base-gray-700);
-    @include x-rem(font-size, 26px);
+    @include x-rem(font-size, 22px);
     font-family: var(--font-primary);
+
+    @include mq($from: tablet-landscape) {
+        @include x-rem(font-size, 26px);
+    }
 }
 
 .nj-sec__heading  {
     color: var(--color-base-gray-700);
-    @include x-rem(font-size, 58px);
+    @include x-rem(font-size, 42px);
+
+    @include mq($from: tablet-landscape) {
+        @include x-rem(font-size, 58px);
+    }
 }
 
 .nj-sec__desc {
@@ -38,6 +61,22 @@
     line-height: 1.2;
 
     margin-bottom: var(--space-rg);
+    text-align: center;
+
+    & + .btn {
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+
+    @include mq($from: tablet-landscape) {
+        text-align: left;
+
+        & + .btn {
+            margin-left: 0;
+        }
+    }
+
 }
 
 
@@ -69,6 +108,16 @@
     }
 }
 
+.nj-sec__title--white {
+    &::after {
+        background-color: var(--color-base-white);
+    }
+    .nj-sec__heading,
+    .nj-sec__subheading {
+        color: var(--color-base-white);
+    }
+}
+
 // MODS -- ALIGNMENT
  // MODS
  .nj-sec__title.nj-sec__title--center {
@@ -79,5 +128,17 @@
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+
+// MODS -- TITLE
+.nj-sec__title--sm {
+    .nj-sec__heading {
+        @include x-rem(font-size, 58px);
+    }
+    .nj-sec__subheading {
+        @include x-rem(font-size, 26px);
+    }
+    
 }
 

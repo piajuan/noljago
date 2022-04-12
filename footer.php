@@ -149,6 +149,22 @@
 <!--  -->
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/app.js"></script>
+
+<script>
+    $('.nj-listings__view-toggle').on('click', function(e) {
+        e.preventDefault();
+
+        if ($(this).hasClass('list-view')) {
+            $(this).removeClass('list-view').addClass('grid-view');
+            $('.nj-listings__data--grid').hide();
+            $('.nj-listings__data--list').fadeIn(500);
+        } else if ($(this).hasClass('grid-view')) {
+            $(this).removeClass('grid-view').addClass('list-view');
+            $('.nj-listings__data--list').hide();
+            $('.nj-listings__data--grid').fadeIn(500);
+        }
+    });
+</script>
 </body>
 
 </html>

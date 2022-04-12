@@ -4,23 +4,7 @@
     background-color: var(--color-base-gray-50);
     position: relative;
     margin-bottom: var(--space-xl);
-    padding: var(--space-rg) 0;
-    // overflow-x: hidden;
-    // overflow-y: visible;
 
-
-    // &::before {
-    //     content: url('../img/design/go-lg.png');
-    //     display: block;
-    //     transform: scale(1);
-
-    //     position: absolute;
-    //     left: -20%;
-    //     top: -30%;
-
-    //     mix-blend-mode: multiply;
-
-    // }
 }
 
 .nj-hero__wrapper {
@@ -29,6 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
+    padding: 0 var(--space-rg);
 
 }
 
@@ -61,29 +46,36 @@
     width: 100%;
     padding-right: var(--space-sm);
 
-    @include mq($from: tablet-landscape) {
-        width: 33%;
+    &:not(:last-child) {
+        border-bottom: solid 1px var(--color-base-gray-50);
     }
 
-    &:not(:last-child) {
-        border-right: solid 1px var(--color-base-gray-50);
-    }
     .frm__grp {
         margin: 0;
     }
     .frm__icon {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .frm__input,
     .frm__append {
-        opacity: 0.3;
+        opacity: 0.5;
         transition: all 0.3s;
     }
 
     .frm__input:focus,
     .frm__input:focus + .frm__append {
         opacity: 1;
+    }
+
+    .frm__input[type="date"] {
+        padding-right: 3px;
+    }
+
+    @include mq($from: tablet-landscape) {
+         &:not(:last-child) {
+            border-right: solid 1px var(--color-base-gray-50);
+        }
     }
 }
 
@@ -93,7 +85,12 @@
     padding: var(--space-xl) 0;
 
     img {
-        width: 672px;
-        object-fit: contain;
+        width: 80%;
+    }
+
+    @include mq($from: desktop-small) {
+        img {
+            width: 672px;
+        }
     }
 }

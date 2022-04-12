@@ -1,3 +1,36 @@
+// GRID VIEW -- DEFAULT
+.nj-sec__listings {
+    .container {
+        position: relative;
+    }
+}
+
+.nj-listings__view-toggle {
+    position: absolute;
+    right: 0;
+    top: -20px;
+
+    .btn {
+        color: var(--color-base-gray-300);
+        @include x-rem(font-size, 30px);
+    }
+
+    &.grid-view {
+        .btn--list {
+            display: none;
+        }
+    }
+
+    &.list-view {
+        .btn--grid {
+            display: none;
+        }
+    }
+
+    @include mq($from: tablet-portrait) {
+        top: 30px;
+    }
+}
 .nj-listings__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -9,6 +42,7 @@
 }
 
 .nj-listings__card {
+    display: block;
     position: relative;
     width: 100%;
     height: 270px;
@@ -28,41 +62,7 @@
     }
 }
 
-.nj-listings__card .nj-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 0.5rem;
-
-    padding: var(--space-rg);
-
-    .tag {
-        position: absolute;
-        top: var(--space-rg);
-        left: 0;
-    }
-
-    .nj-action-widget {
-        position: absolute;
-        top: var(--space-md);
-        right: var(--space-rg);
-    }
-
-    .nj-location {
-        color: var(--color-base-white);
-        font-family: var(--font-primary-medium);
-        @include x-rem(font-size, 18px);
-    }
-}
-
-.nj-listings__info {
-    padding: var(--space-sm) var(--space-rg);
+.nj-listings__item {
 
     .nj-name {
         color: var(--color-base-darkgray);
@@ -74,6 +74,32 @@
         margin-bottom: var(--space-sm);
         @include x-rem(font-size, 18px);
         line-height: 1.3;
+    }
+
+    .nj-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    
+        padding: var(--space-rg);
+    
+        .tag {
+            position: absolute;
+            top: var(--space-rg);
+            left: 0;
+        }
+        .nj-location {
+            color: var(--color-base-white);
+            font-family: var(--font-primary-medium);
+            @include x-rem(font-size, 18px);
+        }
     }
 
     .nj-price-wrapper {
@@ -111,6 +137,17 @@
             margin-right: -34px;
         }
     }
+
+    .nj-action-widget {
+        position: absolute;
+        top: var(--space-md);
+        right: var(--space-rg);
+    }
+} 
+
+.nj-listings__info {
+    padding: var(--space-sm) var(--space-rg);
+
 }
 
 
@@ -169,6 +206,71 @@
         i {
             color: var(--color-base-lime);
             @include x-rem(font-size, 26px);
+        }
+    }
+}
+
+// LIST VIEW
+.nj-listings__data--list {
+    display: none;
+    .nj-listings__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nj-listings__item {
+        display: flex;
+        gap: 2rem;
+
+        &:not(:last-child) {
+            border-bottom: solid 1px var(--color-base-gray-50);
+            padding-bottom: var(--space-lg);
+        }
+    }
+
+    .nj-listings__card {
+        flex-shrink: 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    .nj-content {
+        position: relative;
+        flex: 1 1 auto;
+        padding: 0;
+
+        .nj-location {
+            color: var(--color-base-gray-300);
+        }
+
+        .nj-badge {
+            top: 0;
+            right: 0;
+            left: unset;
+        }
+
+        .nj-excerpt.line-clamp {
+            -webkit-line-clamp: 2;
+            margin: var(--space-xxs) 0 var(--space-xs);
+        }
+
+        .nj-action-widget {
+            position: unset;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .nj-listings__info {
+        min-width: 400px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nj-listings__info--withBanner {
+        .btn {
+            margin-right: -24px;
         }
     }
 }

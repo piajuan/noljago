@@ -8,5 +8,4 @@
     <button class="btn btn--circle btn--orange">
         <?php echo file_get_contents("assets/img/icons/ic-plus.svg"); ?>
     </button>
-
 </div>

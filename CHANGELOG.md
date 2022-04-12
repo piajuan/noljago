@@ -13,6 +13,33 @@ Removed for now removed features.
 Fixed for any bug fixes.
 Security in case of vulnerabilities.
 
+## [1.0.0] - 2022-04-10
+### Changed
+- Changed header icons
+
+### Fixed
+- Fixed responsiveness
+
+## [1.0.0] - 2022-04-09
+### Changed
+- Updated the curated carousel cards
+
+### Added
+- Added the newsletter form section
+
+## [1.0.0] - 2022-04-08
+### Added
+- Added ratings on data cards
+- Added discount banners
+
+### Changed
+- Updated the footer
+
+## [1.0.0] - 2022-04-07
+### Changed
+- Changed hero section
+- Updated the styleguide
+
 ## [1.0.0] - 2022-04-06
 ### Added
 - Added listings card section

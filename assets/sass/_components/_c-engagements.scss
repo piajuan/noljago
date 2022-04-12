@@ -1,6 +1,10 @@
 .nj-engagement {
     width: 100%;
     padding: var(--space-sm) 0;
+
+    * {
+        text-decoration: none;
+    }
 }
 .nj-engagement__reacts {
     color: var(--color-base-lightgray);
@@ -9,7 +13,7 @@
 }
 
 .nj-engagement__replies {
-    color: var(--color-base-blue);
+    color: var(--color-base-lightblue);
     @include x-rem(font-size, 16px);
     font-family: var(--font-primary-medium);
 }

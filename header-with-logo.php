@@ -48,12 +48,12 @@ function current_file_url()
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="nj-header__wrapper justify-content-end">
-                        <!-- <div class="nj-header__block">
+                    <div class="nj-header__wrapper justify-content-between">
+                        <div class="nj-header__block">
                             <a class="nj-header__brand mr-3" href="index.php">
-                                <img src="assets/img/brand-logo.png" alt="">
+                                <img src="assets/img/logo/noljago-white.png" alt="">
                             </a>
-                        </div> -->
+                        </div>
                         <div class="nj-header__block">
                             <div class="nj-header__secondary">
                                 <nav class="nj-header__nav">

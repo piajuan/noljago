@@ -69,16 +69,16 @@ Sidebar
     right: auto;
     transform: translateX(-50%) translateY(-50%);
 
-    width: 18px;
-    height: 2px;
+    width: 32px;
+    height: 4px;
     background-color: var(--color-base-gray-50);
 
     /* these are the upper and lower lines in the menu menu */
-    @include mq($from: tablet-portrait) {
-        // left: 16px;
-        // right: 16px;
-        transform: translateX(0);
-    }
+    // @include mq($from: tablet-portrait) {
+    //     // left: 16px;
+    //     // right: 16px;
+    //     transform: translateX(0);
+    // }
 
     @include mq($from: desktop-small) {
         transform: translateX(-50%) translateY(-50%);
@@ -96,11 +96,11 @@ Sidebar
 }
 
 #nj-menu-trigger .nj-menu-icon::before {
-    bottom: 5px;
+    bottom: 9px;
 }
 
 #nj-menu-trigger .nj-menu-icon::after {
-    top: 5px;
+    top: 9px;
 }
 
 #nj-menu-trigger.is-clicked .nj-menu-icon {
