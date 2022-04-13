@@ -29144,6 +29144,7 @@ hr {
 
 .nj-sec__hero-carousel {
   height: 600px;
+  margin-bottom: var(--space-xl);
 }
 
 .nj-sec__hero-carousel .swiper-pagination {
@@ -29565,9 +29566,14 @@ hr {
 }
 
 .nj-listings__data--list .nj-listings__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 2rem;
 }
 
@@ -29576,19 +29582,54 @@ hr {
   padding-bottom: var(--space-lg);
 }
 
+@media (min-width: 64em) {
+  .nj-listings__data--list .nj-listings__item {
+    position: unset;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .nj-listings__data--list .nj-listings__card {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 64em) {
+  .nj-listings__data--list .nj-listings__card {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .nj-listings__data--list .nj-content {
-  position: relative;
+  position: unset;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding: 0;
+}
+
+@media (min-width: 64em) {
+  .nj-listings__data--list .nj-content {
+    position: relative;
+  }
+}
+
+.nj-listings__data--list .nj-content .nj-name-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+
+@media (min-width: 64em) {
+  .nj-listings__data--list .nj-content .nj-name-wrapper {
+    position: unset;
+  }
 }
 
 .nj-listings__data--list .nj-content .nj-location {
@@ -29596,9 +29637,18 @@ hr {
 }
 
 .nj-listings__data--list .nj-content .nj-badge {
-  top: 0;
-  right: 0;
+  width: 30px;
+  top: 70px;
+  right: 5px;
   left: unset;
+}
+
+@media (min-width: 64em) {
+  .nj-listings__data--list .nj-content .nj-badge {
+    width: 42px;
+    top: 0;
+    right: 0;
+  }
 }
 
 .nj-listings__data--list .nj-content .nj-excerpt.line-clamp {
@@ -29615,7 +29665,7 @@ hr {
 }
 
 .nj-listings__data--list .nj-listings__info {
-  min-width: 400px;
+  width: 100%;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29627,6 +29677,23 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (min-width: 75em) {
+  .nj-listings__data--list .nj-listings__info {
+    width: unset;
+    min-width: 400px;
+  }
+}
+
+.nj-listings__data--list .nj-price-wrapper {
+  margin: var(--space-sm);
+}
+
+@media (min-width: 64em) {
+  .nj-listings__data--list .nj-price-wrapper {
+    margin: var(--space-sm) 0;
+  }
 }
 
 .nj-listings__data--list .nj-listings__info--withBanner .btn {

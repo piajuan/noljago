@@ -219,34 +219,68 @@
     }
 
     .nj-listings__item {
+        position: relative;
         display: flex;
+        flex-direction: column;
         gap: 2rem;
 
         &:not(:last-child) {
             border-bottom: solid 1px var(--color-base-gray-50);
             padding-bottom: var(--space-lg);
         }
+
+        @include mq($from: tablet-landscape) {
+            position: unset;
+            flex-direction: row;
+        }
     }
 
     .nj-listings__card {
         flex-shrink: 0;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
+
+
+        @include mq($from: tablet-landscape) {
+            width: 200px;
+            height: 200px;
+        }
     }
 
     .nj-content {
-        position: relative;
+        position: unset;
         flex: 1 1 auto;
         padding: 0;
+
+        @include mq($from: tablet-landscape) {
+            position: relative;
+        }
+
+        .nj-name-wrapper {
+            position: absolute;
+            top: 20px;
+            left: 120px;
+
+            @include mq($from: tablet-landscape) {
+                position: unset;
+            }
+        }
 
         .nj-location {
             color: var(--color-base-gray-300);
         }
 
         .nj-badge {
-            top: 0;
-            right: 0;
+            width: 30px;
+            top: 70px;
+            right: 5px;
             left: unset;
+
+            @include mq($from: tablet-landscape) {
+                width: 42px;
+                top: 0;
+                right: 0;
+            }
         }
 
         .nj-excerpt.line-clamp {
@@ -261,11 +295,24 @@
     }
 
     .nj-listings__info {
-        min-width: 400px;
+        width: 100%;
         padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include mq($from: desktop-small) {
+            width: unset;
+            min-width: 400px;
+        }
+    }
+
+    .nj-price-wrapper {
+        margin: var(--space-sm);
+
+        @include mq($from: tablet-landscape) {
+            margin: var(--space-sm) 0;
+        }
     }
 
     .nj-listings__info--withBanner {

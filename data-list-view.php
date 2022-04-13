@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-xl-5">
                         <div class="nj-engagement d-flex">
                             <div class="me-3">
                                 <a href="#" class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</a>
@@ -28,7 +28,7 @@
                             <a href="#" class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</a>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-xl-7">
                         <div class="d-flex justify-content-between">
                             <ul class="nj-rating" data-rating="4.5">
                                 <li class="nj-rating__item"></li>
@@ -54,7 +54,7 @@
                     <div class="tag tag--lime flex-column">50% Off Span <span class="ff--primary text-center">Ends at 1PM</span> </div>
                 </div>
 
-                <div class="d-flex justify-content-between align-items-end">
+                <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center align-items-md-end">
                     <div class="nj-addt-info nj-addt-info--lime my-2">
                         <i class="fa-solid fa-circle-check"></i>
                         <span class="text">Instant Confirmation</span>
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-xl-5">
                         <div class="nj-engagement d-flex">
                             <div class="me-3">
                                 <a href="#" class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</a>
@@ -97,7 +97,7 @@
                             <a href="#" class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</a>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-xl-7">
                         <div class="d-flex justify-content-between">
                             <ul class="nj-rating" data-rating="4.5">
                                 <li class="nj-rating__item"></li>
@@ -157,7 +157,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-xl-5">
                         <div class="nj-engagement d-flex">
                             <div class="me-3">
                                 <a href="#" class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</a>
@@ -166,7 +166,7 @@
                             <a href="#" class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</a>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-xl-7">
                         <div class="d-flex justify-content-between">
                             <ul class="nj-rating" data-rating="4.5">
                                 <li class="nj-rating__item"></li>
@@ -226,7 +226,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-xl-5">
                         <div class="nj-engagement d-flex">
                             <div class="me-3">
                                 <a href="#" class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</a>
@@ -235,7 +235,7 @@
                             <a href="#" class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</a>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-xl-7">
                         <div class="d-flex justify-content-between">
                             <ul class="nj-rating" data-rating="4.5">
                                 <li class="nj-rating__item"></li>
@@ -295,7 +295,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-xl-5">
                         <div class="nj-engagement d-flex">
                             <div class="me-3">
                                 <a href="#" class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</a>
@@ -304,7 +304,7 @@
                             <a href="#" class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</a>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-xl-7">
                         <div class="d-flex justify-content-between">
                             <ul class="nj-rating" data-rating="4.5">
                                 <li class="nj-rating__item"></li>
@@ -364,7 +364,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-xl-5">
                         <div class="nj-engagement d-flex">
                             <div class="me-3">
                                 <a href="#" class="nj-engagement__reacts me-2"><i class="fa-regular fa-face-smile me-1"></i>3262</a>
@@ -373,7 +373,7 @@
                             <a href="#" class="nj-engagement__replies"><i class="fa-solid fa-reply me-1"></i>234 Replies</a>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-xl-7">
                         <div class="d-flex justify-content-between">
                             <ul class="nj-rating" data-rating="4.5">
                                 <li class="nj-rating__item"></li>
