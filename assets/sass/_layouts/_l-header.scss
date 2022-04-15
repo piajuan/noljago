@@ -117,10 +117,11 @@ Header
     align-items: center;
   }
   .nj-header__nav_item {
+    position: relative;
   }
   .nj-header__nav_link {
     display: block;
-    padding: var(--space-xxs) 0;
+    padding: var(--space-xxs);
     margin: 0 var(--space-sm);
     color: var(--color-base-darkgray) !important;
     transition: all 0.2s ease-in-out;
@@ -140,6 +141,12 @@ Header
     @include x-rem(font-size, 20px);
     padding: 0 0.15rem;
     margin: 0;
+
+    svg,
+    img {
+      height: 32px;
+      object-fit: contain;
+    }
   }
  
 
@@ -169,4 +176,24 @@ Header
         color: var(--color-base-green) !important;
       }
     }
+  }
+
+  // CART
+  .nj-cart__badge {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -5px;
+    top: -8px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 20px;
+
+    
+    background: var(--color-danger);
+    color: var(--color-base-white);
+   
+    font-size: 12px;
+    font-family: var(--font-primary);
   }

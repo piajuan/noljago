@@ -207,9 +207,13 @@ p.nj-footer__list_link {
     .nj-footer__block {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         align-items: center;
+
+        @include mq($from:tablet-portrait) {
+            justify-content: space-between;
+        }
     }
     .nj-footer__list_item {
         font-family: var(--font-primary);
@@ -297,6 +301,11 @@ p.nj-footer__list_link {
 .nj-footer--blue {
     .nj-footer__primary {
         background-color: var(--color-base-blue);
+    }
+}
+.nj-footer--orange {
+    .nj-footer__primary {
+        background-color: var(--color-base-orange);
     }
 }
 

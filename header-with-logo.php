@@ -58,56 +58,25 @@ function current_file_url()
                             <div class="nj-header__secondary">
                                 <nav class="nj-header__nav">
                                     <ul class="nj-header__nav_list">
-                                        <li class="nj-header__nav_item">
+                                        <li class="nj-header__nav_item d-none d-lg-block">
                                             <a class="nj-header__nav_icon" href="#"> <?php echo file_get_contents("assets/img/icons/ic-search.svg"); ?></a>
                                         </li>
-                                        <li class="nj-header__nav_item">
+                                        <li class="nj-header__nav_item d-none d-lg-block">
                                             <a id="nj-menu-trigger" href="#0"><span class="nj-menu-text">Menu</span><span class="nj-menu-icon"></span></a>
                                         </li>
                                         <li class="nj-header__nav_item">
                                             <a class="nj-header__nav_icon" href="#"> <?php echo file_get_contents("assets/img/icons/ic-user.svg"); ?></a>
                                         </li>
+                                        <li class="nj-header__nav_item">
+                                            <a class="nj-header__nav_icon" href="#"> <?php echo file_get_contents("assets/img/icons/ic-cart.svg"); ?></a>
+                                            <span class="nj-cart__badge">12</span>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
-                            <!-- <div class="nj-header__primary nj-header__block--desktopOnly">
-                                <nav class="nj-header__nav">
-                                    <ul class="nj-header__nav_list">
-                                        <li class="nj-header__nav_item">
-                                            <a class="nj-header__nav_link" href="#">Accomodations</a>
-                                        </li>
-                                        <li class="nj-header__nav_item">
-                                            <a class="nj-header__nav_link" href="#">Experiences</a>
-                                        </li>
-                                        <li class="nj-header__nav_item">
-                                            <a class="nj-header__nav_link" href="#">Restaurants</a>
-                                        </li>
-                                        <li class="nj-header__nav_item">
-                                            <a class="nj-header__nav_link" href="#">QA</a>
-                                        </li>
-                                        <li class="nj-header__nav_item">
-                                            <a class="nj-header__nav_link" href="#">Last Minute Deals</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div> -->
-
                         </div>
-                        <!-- <div class="nj-header__block nj-header__block--mobileOnly">
-                            <nav class="nj-header__nav">
-                                <ul class="nj-header__nav_list">
-                                    <li class="nj-header__nav_item">
-                                        <a class="nj-header__nav_icon" href="#"><i class="fe fe-search"></i></a>
-                                    </li>
-                                    <li class="nj-header__nav_item">
-                                        <a id="nj-menu-trigger" href="#0"><span class="nj-menu-text">Menu</span><span class="nj-menu-icon"></span></a>
-                                    </li>
-                                    <li class="nj-header__nav_item">
-                                        <a class="nj-header__nav_icon" href="#"><i class="fe fe-user"></i></a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div> -->
+
+
                     </div>
                 </div>
             </div>

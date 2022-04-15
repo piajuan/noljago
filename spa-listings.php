@@ -16,30 +16,32 @@ include("header.php");
                     <div class="nj-hero__search">
                         <div class="nj-hero__search-item">
                             <div class="frm__grp">
-                                <input class="frm__input frm__input--bold" type="text" placeholder="what do you want to do?">
-                                <div class="frm__append">
+                                <input class="frm__input frm__input--bold" type="text" id="sampleA" placeholder="where to go?" data-validation="strength" data-validation-strength="2">
+                                <label class="frm__placeholder" for="sampleA">
+                                    <span>where to go?</span>
                                     <i class="frm__icon fa-solid fa-magnifying-glass-location"></i>
-                                </div>
+                                </label>
                             </div>
                         </div>
                         <div class="nj-hero__search-item">
                             <div class="frm__grp">
-                                <input class="frm__input frm__input--bold" type="date" placeholder="when you want to go?">
+                                <input class="frm__input frm__input--bold" type="date" id="sampleB">
+                                <label class="frm__placeholder" for="sampleB">
+                                    <span>when you want to go?</span>
+                                    <i class="frm__icon fa-regular fa-calendar"></i>
+                                </label>
                             </div>
                         </div>
                         <div class="nj-hero__search-item">
                             <div class="frm__grp">
-                                <select class="frm__input frm__input--bold" name="" id="">
-                                    <option value="" disabled selected hidden>how many are going?</option>
-                                    <option value="">Option 1</option>
-                                    <option value="">Option 2</option>
-                                    <option value="">Option 3</option>
-                                </select>
-                                <div class="frm__append">
+                                <input class="frm__input frm__input--bold" type="text" id="sampleB" placeholder="how many are going?">
+                                <label class="frm__placeholder" for="sampleB">
+                                    <span>how many are going?</span>
                                     <i class="frm__icon fa-solid fa-circle-chevron-down"></i>
-                                </div>
+                                </label>
                             </div>
                         </div>
+
                     </div>
                     <div class="nj-hero__display">
                         <img src="assets/img/logo/noljago-white.png" alt="">
@@ -73,13 +75,13 @@ include("header.php");
                 </a>
             </li>
             <li class="nj-nav__item nj-nav__item--green">
-                <a class="nj-nav__link" href="#">
+                <a class="nj-nav__link" href="restaurant-listings.php">
                     <img class="nj-nav__icon" src="assets/img/icons/nav/ic-food.svg" alt="">
                     <span>food and drinks</span>
                 </a>
             </li>
             <li class="nj-nav__item nj-nav__item--blue">
-                <a class="nj-nav__link active" href="#">
+                <a class="nj-nav__link active" href="spa-listings.php">
                     <img class="nj-nav__icon" src="assets/img/icons/nav/ic-spa.svg" alt="">
                     <span>Wellness & Spa</span>
                 </a>
@@ -93,7 +95,7 @@ include("header.php");
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="nj-sec__title nj-sec__title--center nj-sec__title--green">
+                <div class="nj-sec__title nj-sec__title--center nj-sec__title--blue">
                     <span class="nj-sec__subheading">A Healing Journey</span>
                     <h1 class="nj-sec__heading">Wellness <span class="color--gray-700">&</span> Spa</h1>
                 </div>
@@ -105,10 +107,10 @@ include("header.php");
                 </div>
 
                 <!-- Grid View -->
-                <?php include("data-grid-view.php"); ?>
+                <?php include("spa-grid-view.php"); ?>
 
                 <!-- List View -->
-                <?php include("data-list-view.php"); ?>
+                <?php include("spa-list-view.php"); ?>
 
             </div>
         </div>

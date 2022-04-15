@@ -12,6 +12,25 @@ Deprecated for soon-to-be removed features.
 Removed for now removed features.
 Fixed for any bug fixes.
 Security in case of vulnerabilities.
+## [1.0.0] - 2022-04-15
+### Added
+- Added Restaurant Listings Page
+
+## [1.0.0] - 2022-04-14
+### Added
+- Added Spa Details Responsiveness
+
+## [1.0.0] - 2022-04-13
+### Added
+- Added Spa Details Page
+
+## [1.0.0] - 2022-04-12
+### Added
+- Added Spa Listings Responsiveness
+
+## [1.0.0] - 2022-04-11
+### Added
+- Added List View / Grid View options on listings card
 
 ## [1.0.0] - 2022-04-10
 ### Changed

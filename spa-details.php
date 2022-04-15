@@ -103,13 +103,13 @@ include("header-with-logo.php");
                 </a>
             </li>
             <li class="nj-nav__item nj-nav__item--green">
-                <a class="nj-nav__link" href="#">
+                <a class="nj-nav__link" href="restaurant-listings.php">
                     <img class="nj-nav__icon" src="assets/img/icons/nav/ic-food.svg" alt="">
                     <span>food and drinks</span>
                 </a>
             </li>
             <li class="nj-nav__item nj-nav__item--blue">
-                <a class="nj-nav__link active" href="#">
+                <a class="nj-nav__link active" href="spa-listings.php">
                     <img class="nj-nav__icon" src="assets/img/icons/nav/ic-spa.svg" alt="">
                     <span>Wellness & Spa</span>
                 </a>

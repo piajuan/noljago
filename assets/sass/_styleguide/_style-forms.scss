@@ -86,8 +86,8 @@ form {
         border-color: var(--color-base-gray-600);
     }
 
-    &:focus + label,
-    &:required:valid + label {
+    &:focus + .frm__label,
+    &:required:valid + .frm__label {
         @include x-rem(font-size, 12px);
         font-family: var(--font-primary);
         color: var(--color-base-gray-600);
@@ -117,6 +117,7 @@ form {
     font-family: var(--font-primary-extrabold);
     border-color: transparent !important;
     @include x-rem(font-size, 22px);
+    padding-left: var(--space-sm);
     &::-webkit-input-placeholder {
         /* Edge */
         color: var(--color-base-gray-600);
