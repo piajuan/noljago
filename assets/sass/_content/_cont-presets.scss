@@ -51,6 +51,28 @@ a,
     }
 }
 
+.border--lightgray {
+    border: solid 1px rgba($color: #BBB, $alpha: 0.5);
+}
+
+.list {
+    padding-left: 20px;
+    &--bullet {
+        list-style-type: disc;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: var(--space-rg);
+    }
+}
+
+.nj-divider {
+    height: 0px;
+    background: transparent;
+    border: 1px solid #BBBBBB;
+    opacity: 0.5;
+}
+
 .nj-sec__divider {
     @extend .container;
     height: 0px;

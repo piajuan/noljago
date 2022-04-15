@@ -128,7 +128,7 @@
 
     /* line-height */
     --heading-line-height: 1.2;
-    --body-line-height: 1.4;
+    --body-line-height: 1.2;
 
 
 
@@ -140,7 +140,7 @@
     @include mq($from: desktop-medium) {
         --text-scale-ratio: 1.25;
         --text-base-size: 16px;
-        --body-line-height: 1.8;
+        --body-line-height: 1.3;
     }
 
     /* type scale */
@@ -269,6 +269,7 @@ a {
 b,
 strong {
     font-weight: bold;
+    font-family: var(--font-primary-extrabold);
 }
 
 .text-container {
@@ -350,6 +351,9 @@ ul {
 .color--green {
     color: var(--color-base-green);
 }
+.color--lime {
+    color: var(--color-base-lime);
+}
 
 .color--gray-50 {
     color: var(--color-base-gray-50);
@@ -375,6 +379,10 @@ ul {
 
 .ff--primary {
     font-family: var(--font-primary) !important;
+}
+
+.ff--primary-medium {
+    font-family: var(--font-primary-medium) !important;
 }
 
 .ff--secondary {

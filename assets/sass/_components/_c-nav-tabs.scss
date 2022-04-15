@@ -15,11 +15,11 @@
     }
 
     @include mq($from: tablet-landscape) {
-        // margin: -84px auto var(--space-lg);
-        margin: 0px auto var(--space-lg);
+        margin: -84px auto var(--space-lg);
+        // margin: 0px auto var(--space-lg);
         position: relative;
         bottom: unset;
-        transform: translateY(-34%);
+        // transform: translateY(-34%);
 
         &::before {
             display: none;

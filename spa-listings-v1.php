@@ -378,7 +378,7 @@ include("header.php");
             </div>
             <div class="col-md-8 p-0">
                 <div class="nj-discover__carousel">
-                    <div class="swiper mySwiper">
+                    <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <!-- Listing Item -->

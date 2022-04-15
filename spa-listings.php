@@ -56,31 +56,31 @@ include("header.php");
         <ul class="nj-nav__list">
             <li class="nj-nav__item nj-nav__item--orange">
                 <a class="nj-nav__link" href="#">
-                    <img class="nj-nav__icon" src="assets/img/icons/ic-community.svg" alt="">
+                    <img class="nj-nav__icon" src="assets/img/icons/nav/ic-community.svg" alt="">
                     <span>Community Post</span>
                 </a>
             </li>
             <li class="nj-nav__item nj-nav__item--violet">
                 <a class="nj-nav__link" href="#">
-                    <img class="nj-nav__icon" src="assets/img/icons/ic-accomodations.svg" alt="">
+                    <img class="nj-nav__icon" src="assets/img/icons/nav/ic-accomodations.svg" alt="">
                     <span>Accommodations</span>
                 </a>
             </li>
             <li class="nj-nav__item nj-nav__item--pink">
                 <a class="nj-nav__link" href="#">
-                    <img class="nj-nav__icon" src="assets/img/icons/ic-activites.svg" alt="">
+                    <img class="nj-nav__icon" src="assets/img/icons/nav/ic-activites.svg" alt="">
                     <span>activities</span>
                 </a>
             </li>
             <li class="nj-nav__item nj-nav__item--green">
                 <a class="nj-nav__link" href="#">
-                    <img class="nj-nav__icon" src="assets/img/icons/ic-food.svg" alt="">
+                    <img class="nj-nav__icon" src="assets/img/icons/nav/ic-food.svg" alt="">
                     <span>food and drinks</span>
                 </a>
             </li>
             <li class="nj-nav__item nj-nav__item--blue">
                 <a class="nj-nav__link active" href="#">
-                    <img class="nj-nav__icon" src="assets/img/icons/ic-spa.svg" alt="">
+                    <img class="nj-nav__icon" src="assets/img/icons/nav/ic-spa.svg" alt="">
                     <span>Wellness & Spa</span>
                 </a>
             </li>
@@ -298,55 +298,54 @@ include("header.php");
                     <span class="nj-sec__subheading">Pack Your Bags and Hit The Grid</span>
                     <h1 class="nj-sec__heading">Receive Travel Plan and Updates</h1>
                 </div>
+
+                <!-- form -->
+                <form action="">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="row my-2">
+                            <div class="col-md-6">
+                                <div class="frm__grp">
+                                    <input type="text" class="frm__input form-control" id="sample-fname" data-validation="strength" data-validation-strength="2" required>
+                                    <label class="frm__label" for="sample-fname">First Name (Required)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="frm__grp">
+                                    <input type="text" class="frm__input form-control" id="sample-lname" data-validation="strength" data-validation-strength="2" required>
+                                    <label class="frm__label" for="sample-lname">Last Name (Required)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-md-6">
+                                <div class="frm__grp">
+                                    <input type="email" class="frm__input form-control" id="sample-email" data-validation="strength" data-validation-strength="2" required>
+                                    <label class="frm__label" for="sample-email">Email Address (Required)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="frm__grp">
+                                    <input type="text" class="frm__input form-control" id="sample-mobile">
+                                    <label class="frm__label" for="sample-mobile">Mobile Number (Optional)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                                <div class="form-check my-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                                    <label class="form-check-label ms-2" for="defaultCheck1">I’m happy to receive emails from Noljago*</label>
+                                </div>
+
+                                <!-- Submit -->
+                                <input type="submit" class="btn btn--gray mt-2" value="Subscribe">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
 
-            <!-- form -->
-            <form action="">
-                <div class="col-md-8 offset-md-2">
-                    <div class="row my-2">
-                        <div class="col-md-6">
-                            <div class="frm__grp">
-                                <input type="text" class="frm__input form-control" id="sample-fname" data-validation="strength" data-validation-strength="2" required>
-                                <label class="frm__label" for="sample-fname">First Name (Required)</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="frm__grp">
-                                <input type="text" class="frm__input form-control" id="sample-lname" data-validation="strength" data-validation-strength="2" required>
-                                <label class="frm__label" for="sample-lname">Last Name (Required)</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-2">
-                        <div class="col-md-6">
-                            <div class="frm__grp">
-                                <input type="email" class="frm__input form-control" id="sample-email" data-validation="strength" data-validation-strength="2" required>
-                                <label class="frm__label" for="sample-email">Email Address (Required)</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="frm__grp">
-                                <input type="text" class="frm__input form-control" id="sample-mobile">
-                                <label class="frm__label" for="sample-mobile">Mobile Number (Optional)</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-2">
-                        <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
-                            <div class="form-check my-3">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
-                                <label class="form-check-label ms-2" for="defaultCheck1">I’m happy to receive emails from Noljago*</label>
-                            </div>
-
-                            <!-- Submit -->
-                            <input type="submit" class="btn btn--gray mt-2" value="Subscribe">
-                        </div>
-                    </div>
-                </div>
-            </form>
-
         </div>
-
 
     </div>
 

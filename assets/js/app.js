@@ -182,11 +182,47 @@ var plugins = (function () {
         });
     }
 
+    // Listings Swiper
+    const listingsSwiper = function() {
+        const swiper = new Swiper(".nj-sec__listings-carousel .swiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 18,
+            loop: true,
+            navigation: {
+              nextEl: ".nj-sec__listings-carousel .swiper-button-next",
+              prevEl: ".nj-sec__listings-carousel .swiper-button-prev",
+            },
+            breakpoints: {
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 18,
+                centeredSlides: true,
+                }
+            }
+        });
+    }
+
+    // Gallery Swiper   
+    const gallerySwiper = function() {
+        const swiper = new Swiper(".nj-dt-gallery__carousel .swiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 14,
+            loop: true,
+            navigation: {
+              nextEl: ".nj-dt-gallery__carousel .swiper-button-next",
+              prevEl: ".nj-dt-gallery__carousel .swiper-button-prev",
+            },
+        });
+    }
+
+
     function initialize() {
         headerOnScroll();
         sidebar();
         heroSwiper();
         discoverSwiper();
+        listingsSwiper();
+        gallerySwiper();
     }
 
     return {

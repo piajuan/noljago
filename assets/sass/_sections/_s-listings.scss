@@ -94,6 +94,7 @@
             position: absolute;
             top: var(--space-rg);
             left: 0;
+            text-align: center;
         }
         .nj-location {
             color: var(--color-base-white);
@@ -102,41 +103,6 @@
         }
     }
 
-    .nj-price-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: var(--space-sm) var(--space-rg);
-        margin: var(--space-sm) 0;
-        border: solid 1px var(--color-base-gray-100);
-
-        .nj-label {
-            color: var(--color-base-lightgray);
-            font-family: var(--font-primary);
-            @include x-rem(font-size, 20px);
-        }
-
-        .nj-price {
-            color: var(--color-base-gray-600);
-            font-family: var(--font-primary);
-            @include x-rem(font-size, 24px);
-            line-height: 1.2;
-        }
-
-        .nj-price--old {
-            color: var(--color-base-gray-400);
-            font-family: var(--font-primary);
-            @include x-rem(font-size, 22px);
-            text-decoration: line-through;
-
-        }
-
-        .tag {
-            padding-right: var(--space-rg);
-            padding-left: var(--space-rg);
-            margin-right: -34px;
-        }
-    }
 
     .nj-action-widget {
         position: absolute;
@@ -175,6 +141,44 @@
         position: unset;
         top: unset;
         left: unset;
+    }
+}
+
+// Price 
+
+.nj-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) var(--space-rg);
+    margin: var(--space-sm) 0;
+    border: solid 1px var(--color-base-gray-100);
+
+    .nj-label {
+        color: var(--color-base-lightgray);
+        font-family: var(--font-primary);
+        @include x-rem(font-size, 20px);
+    }
+
+    .nj-price {
+        color: var(--color-base-gray-600);
+        font-family: var(--font-primary);
+        @include x-rem(font-size, 26px);
+        line-height: 1.2;
+    }
+
+    .nj-price--old {
+        color: var(--color-base-gray-100);
+        font-family: var(--font-primary);
+        @include x-rem(font-size, 22px);
+        text-decoration: line-through;
+
+    }
+
+    .tag {
+        padding-right: var(--space-rg);
+        padding-left: var(--space-rg);
+        margin-right: -34px;
     }
 }
 
@@ -304,6 +308,13 @@
         @include mq($from: desktop-small) {
             width: unset;
             min-width: 400px;
+        }
+    }
+
+    .nj-addt-info {
+        width: 100%;
+        @include mq($from: tablet-landscape) {
+            width: fit-content;
         }
     }
 

@@ -1,24 +1,16 @@
 // main: ../style.scss
 
 .nj-sec__hero-carousel {
-    height: 600px;
-    margin-bottom: var(--space-xl);
+    height: calc(100vh - 64px);
+    margin-bottom: var(--space-rg);
 
-    .swiper-pagination {
-        bottom: 50px;
+    @include mq($from: tablet-portrait) {
+        height: 600px;
     }
+    
+    @include mq($from: tablet-landscape) {
+        margin-bottom: var(--space-xl);
 
-    .swiper-pagination-bullet {
-        background-color: var(--color-base-white);
-        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,17px));
-        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,17px));
-        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,6px);
-        opacity: 0.5;
-    }
-
-    .swiper-pagination-bullet-active {
-        background-color: transparent;
-        border: solid 2px rgba($color: #FFFFFF, $alpha: 0.5);
     }
 
 

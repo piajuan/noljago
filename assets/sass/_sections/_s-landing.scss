@@ -1,8 +1,13 @@
 
     .nj-logo-overlay {
         mix-blend-mode: multiply;
-        transform: scale(1.2);
+        transform: scale(1.8);
         position: absolute;
-        top: -18%;
-        left: -10%;
+        top: 13%;
+
+        @include mq($from: desktop-small) {
+            transform: scale(1.2);
+            top: -18%;
+            left: -10%;
+        }
     }

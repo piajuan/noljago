@@ -1,0 +1,158 @@
+.nj-sec__details {
+    .nj-action-widget {
+        gap: 0;
+    }
+}
+// DETAILES -- HEADING
+.nj-dt-heading {
+    margin: var(--space-rg) 0;
+
+    @include mq($from: tablet-landscape) {
+        margin: var(--space-lg) 0;
+    }
+}
+.nj-dt-location {
+    font-family: var(--font-primary-medium);
+    color: var(--color-base-gray-100);
+    i {
+        margin-right: var(--space-xxs);
+    }
+
+    @include mq($from: tablet-landscape) {
+        i {
+            @include x-rem(font-size, 32px);
+        }
+    }
+}
+
+.nj-dt-name {
+    color: var(--color-base-gray-700);
+    margin-top: var(--space-xxs);
+    margin-bottom: 0;
+    @include x-rem(font-size, 28px);
+
+    @include mq($from: tablet-landscape) {
+        @include x-rem(font-size, 42px);
+    }
+}
+
+// DETAILS -- GALLERY
+.nj-dt-gallery{
+    margin: var(--space-md) 0;
+}
+
+.nj-dt-gallery__carousel {
+    position: relative;
+    @include mq($from: tablet-landscape) {
+        display: none;
+    }
+}
+
+.nj-dt-gallery__grid {
+    gap: 1.2rem;
+    margin: var(--space-rg) 0;
+
+    // hidden on mobile to tablet
+    display: none;
+
+    @include mq($from: tablet-landscape) {
+        display: flex;
+    }
+}
+
+.nj-dt-gallery__item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: solid 1px var(--color-base-gray-600);
+    cursor: pointer;
+    img {
+        @extend %img-cover;
+    }
+
+    @include mq($from: tablet-landscape) {
+        height: 140px;
+    }
+    @include mq($from: desktop-small) {
+        height: 200px;
+    }
+}
+
+// DETAILS -- AMENTIES
+.nj-dt-amenities__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+
+    border-top: solid 1px rgba($color: #bbbbbb, $alpha: 0.5);
+    border-bottom: solid 1px rgba($color: #bbbbbb, $alpha: 0.5);
+}
+
+.nj-dt-amenities__item {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-rg) var(--space-sm);
+    color: var(--color-base-gray-500);
+    font-family: var(--font-primary-medium);
+    @include x-rem(font-size, 14px);
+
+    .nj-icon {
+        height: 22px;
+        object-fit: contain;
+        margin-right: var(--space-xs);
+        display: inline-block;
+    }
+
+    .nj-label {
+       display: none;
+
+        @include mq($from: tablet-landscape) {
+                display: inline-block;
+        }
+    }
+}
+
+// DETAILS -- DESCRIPTION
+.nj-dt-desc {
+    margin: var(--space-lg) 0 var(--space-rg);
+
+    p {
+        @include x-rem(font-size, 18px);
+    }
+}
+
+// DETAILS - POLICY
+.nj-dt-policy {
+    li,
+    p {
+        @include x-rem(font-size, 18px);
+    }
+}
+
+// DETAILS -- REVIEW
+.nj-dt-reviews {
+    margin-top: var(--space-md);
+    @include mq($from: tablet-landscape) {
+     margin-top: 0;
+    }
+}
+
+// DETAILS -- MAP
+.nj-dt-map {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin-top: var(--space-md);
+
+    iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    @include mq($from: tablet-landscape) {
+        height: 100%;
+        margin-top: 0;
+    }
+}

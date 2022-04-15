@@ -234,27 +234,28 @@ fieldset:disabled a.btn {
 .btn--basic {
     // subtle version, used for secondary actions or in combo with primary/accent button
     background-color: var(--color-base-white);
-    border-color: rgba(0, 40, 100, 0.12);
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-    color: #495057 !important;
+    border-color: var(--color-base-gray-400);
+    // box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    color: var(--color-base-gray-400) !important;
+    font-family: var(--font-primary);
 
     i {
-    color: #495057 !important;
+    color: var(--color-base-gray-400)!important;
 
     }
     &:hover,
     &:focus {
-        background-color: $oc-gray-3;
-        color: #495057 !important;
+        background-color: #F5F5F5;
+        color: var(--color-base-gray-400) !important;
     }
 
     &:visited {
         background-color: var(--color-base-white);
-        color: #495057 !important;
+        color: var(--color-base-gray-400) !important;
 
         &:hover {
             background-color: $oc-gray-3;
-            color: #495057 !important;
+            color: var(--color-base-gray-400) !important;
         }
     }
 
@@ -505,6 +506,28 @@ fieldset:disabled a.btn {
         }
     }
 }
+
+.btn--lightgray {
+    background-color: var(--color-base-gray-100);
+    color: var(--btn-light-label);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-base-gray-100);
+        color: var(--btn-light-label);
+    }
+
+    &:visited {
+        background-color: var(--color-base-gray-100);
+        color: var(--btn-light-label);
+
+        &:hover {
+            background-color: var(--color-base-gray-100);
+        }
+    }
+}
+
+
 
 .btn--red {
     background-color: $oc-red-7;
